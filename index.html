@@ -115,7 +115,7 @@ body{background-image:radial-gradient(120% 60% at 50% 0%,var(--bg2) 0%,var(--bg)
 .play svg{width:30px;height:30px;fill:currentColor;margin-left:4px}
 .play.wide{width:100%;border-radius:16px;height:60px;margin:22px 0 10px}
 .play-lbl{font:800 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--or-ink);text-align:center}
-.pills{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px;flex:none}
+.pills{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;flex:none}
 .pill{border-radius:14px;padding:13px 8px;cursor:pointer;text-align:center;box-shadow:var(--e1);
   transition:transform .13s,filter .15s;border:1px solid transparent}
 .pill:active{transform:scale(.95);filter:brightness(1.07)}
@@ -126,7 +126,8 @@ body{background-image:radial-gradient(120% 60% at 50% 0%,var(--bg2) 0%,var(--bg)
 .pill.p2{background:var(--dark-bg);border-color:var(--dark-line)}
 .pill.p2 b{color:#fff;font-family:var(--sans);font-size:13px}.pill.p2 span{color:#fff}
 .pill.p3{background:var(--neutral);border-color:var(--neutral-line)}
-.pill.p3 b{color:var(--neutral-ink);font-family:var(--sans);font-size:14px}.pill.p3 span{color:var(--mut)}
+.pill.p3 b{color:var(--neutral-ink);font-family:var(--sans);font-size:13px}.pill.p3 span{color:var(--mut)}
+.pill b{font-size:13px}
 
 /* ---------- continuar ---------- */
 .cont{flex:none;padding:2px 0 14px}
@@ -147,7 +148,7 @@ body{background-image:radial-gradient(120% 60% at 50% 0%,var(--bg2) 0%,var(--bg)
   text-transform:uppercase}
 
 /* ---------- feed de libros ---------- */
-#v-home{padding-bottom:104px}
+#v-home{padding-bottom:126px}
 .dock{position:fixed;left:0;right:0;bottom:calc(var(--nav) + env(safe-area-inset-bottom));z-index:90;
   padding:16px 16px 12px;pointer-events:none;background:linear-gradient(to top,var(--bg) 52%,transparent)}
 .dock>div{max-width:520px;margin:0 auto;pointer-events:auto}
@@ -155,29 +156,20 @@ body{background-image:radial-gradient(120% 60% at 50% 0%,var(--bg2) 0%,var(--bg)
 .mini-btn{background:var(--neutral);border:1px solid var(--neutral-line);color:var(--neutral-ink);
   border-radius:99px;padding:7px 13px;font:700 10.5px/1 var(--sans);cursor:pointer;margin-left:auto;box-shadow:var(--e1)}
 .mini-btn:active{transform:scale(.95)}
-.feed{flex:1;min-height:0;position:relative;overflow:hidden;touch-action:none}
-.track{position:absolute;left:0;right:0;top:0;bottom:0;will-change:transform}
-.book{position:absolute;left:0;right:0;height:68%;opacity:.4;transform:scale(.93);
-  transition:opacity .34s cubic-bezier(.22,.8,.24,1),transform .34s cubic-bezier(.22,.8,.24,1)}
-.book.act{opacity:1;transform:none}
-.card3{position:absolute;inset:0;border-radius:24px;overflow:hidden;cursor:pointer;
-  display:flex;flex-direction:column;padding:22px;box-shadow:0 18px 40px -22px rgba(0,0,0,.7)}
-.card3 .top{display:flex;align-items:center;gap:9px}
-.card3 .dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.8);flex:none}
-.card3 .cat{font:700 9.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.62)}
-.card3 .st{margin-left:auto;font:700 9.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
-  color:rgba(255,255,255,.5)}
-.card3 .big{margin-top:auto;font:800 clamp(30px,9vw,40px)/1 var(--mono);color:#fff;letter-spacing:-.03em}
-.card3 .sub{font:700 9.5px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;
-  color:rgba(255,255,255,.55);margin-top:10px}
-.card3 h3{font:400 clamp(15px,4.2vw,17px)/1.4 var(--serif);color:rgba(255,255,255,.92);margin:18px 0 0}
-.card3 .snip{font:12.5px/1.6 var(--serif);color:rgba(255,255,255,.5);margin-top:7px;overflow:hidden;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.card3 .go{margin-top:16px;align-self:flex-start;display:inline-flex;align-items:center;gap:9px;background:#fff;
-  color:#17110E;border:0;border-radius:99px;padding:13px 21px;font:800 12.5px/1 var(--sans);cursor:pointer;
-  transition:transform .13s}
-.card3 .go:active{transform:scale(.94)}
-.card3 .go svg{width:12px;height:12px;fill:currentColor}
+.lvwrap{flex:1;display:flex;flex-direction:column;justify-content:center;padding:6px 0}
+.lvlist{display:grid;gap:9px}
+.lvrow{display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;
+  background:var(--card);border:1px solid var(--line2);border-radius:16px;padding:12px 14px;
+  box-shadow:var(--e1);transition:transform .13s,border-color .15s}
+.lvrow:active{transform:scale(.98)}
+.lvrow[disabled]{opacity:.4;cursor:not-allowed}
+.lvnum{width:50px;height:50px;border-radius:14px;flex:none;display:grid;place-items:center;
+  font:800 21px/1 var(--mono);color:#fff;letter-spacing:-.03em}
+.lvt{flex:1;min-width:0}
+.lvt b{display:block;font:700 15px/1.25 var(--sans)}
+.lvt span{display:block;font:9.5px/1.4 var(--mono);letter-spacing:.11em;text-transform:uppercase;
+  color:var(--mut);margin-top:6px}
+.lvgo{color:var(--line2);font-size:15px}
 .nv1{background:#2E6B4F}.nv2{background:#1F4A63}.nv3{background:#8A5A12}
 .nv4{background:#A34715}.nv5{background:#7C2E44}
 .cv3{background:#1F5B4A}.cv4{background:#8A5A12}.cv5{background:#3E3577}
@@ -549,11 +541,13 @@ body.reading .app{padding-bottom:0}
       <div class="chead"><span class="kick">Continuar</span><span class="cnote" id="contNote"></span></div>
       <div class="crow" id="contRow"></div>
     </div>
-    <div class="fhead"><span class="kick" id="feedKick">Ejercicio de lectura</span></div>
-    <div class="feed" id="feed"><div class="track" id="track"></div></div>
+    <div class="lvwrap">
+      <div class="kick" style="margin-bottom:13px">Elige el nivel y empieza</div>
+      <div class="lvlist" id="lvList"></div>
+      <p class="note" id="startNote" style="text-align:center;margin-top:14px"></p>
+    </div>
   </section>
   <div class="dock" id="dock"><div>
-    <div class="swipe" id="swipeHint">▲ desliza para ver otra lectura</div>
     <div class="pills">
       <button class="pill p1" id="pillSpeed"><b id="pSpeed">300</b><span>ppm</span></button>
       <button class="pill p2" id="pillMode"><b id="pMode">Palabra</b><span>modo</span></button>
@@ -719,7 +713,6 @@ body.reading .app{padding-bottom:0}
       <button class="prow" id="rowRead"><span class="pi">Aa</span><span class="pt">Ajustes de lectura<span>Tipografía, interlineado, columna</span></span><span class="pgo">›</span></button>
       <button class="prow" id="rowSpeed"><span class="pi">◈</span><span class="pt">Velocidad<span id="rowSpeedV">300 ppm</span></span><span class="pgo">›</span></button>
       <button class="prow" id="rowMode"><span class="pi">▤</span><span class="pt">Modo de lectura<span id="rowModeV">Palabra</span></span><span class="pgo">›</span></button>
-      <button class="prow" id="rowNivel"><span class="pi">◱</span><span class="pt">Nivel de dificultad<span id="rowNivelV">Automático</span></span><span class="pgo">›</span></button>
       <div class="prow"><span class="pi">◔</span><span class="pt">Recordatorio diario<span>Aún no disponible</span></span>
         <span class="pv">20:00</span></div>
     </div>
@@ -873,18 +866,6 @@ body.reading .app{padding-bottom:0}
     <button class="btn line loginopt" style="margin-bottom:9px">Continuar con Apple</button>
     <button class="btn dark loginopt">Continuar con correo</button>
     <p class="note" style="margin-top:16px;text-align:center">Al continuar aceptas los términos y el aviso de privacidad.</p>
-  </div>
-
-  <div id="pane-nivel">
-    <div class="grid2" id="nivSeg">
-      <button class="opt" data-n="0" aria-pressed="true">Automático<small>según tu comprensión</small></button>
-      <button class="opt" data-n="1">Nivel 1<small>frases cortas</small></button>
-      <button class="opt" data-n="2">Nivel 2<small>sencillo</small></button>
-      <button class="opt" data-n="3">Nivel 3<small>intermedio</small></button>
-      <button class="opt" data-n="4">Nivel 4<small>avanzado</small></button>
-      <button class="opt" data-n="5">Nivel 5<small>exigente</small></button>
-    </div>
-    <p class="note" style="margin-top:14px">El nivel mide la longitud de las frases y del vocabulario, no el tema. En automático sube cuando tu comprensión pasa de 85 % y baja si cae de 55 %.</p>
   </div>
 
   <div id="pane-runmode">
@@ -1226,6 +1207,206 @@ quiz:[
 {q:"¿De dónde venía esa disposición?",options:["De un arquitecto","De la abuela, mujer de escasa estatura","De una moda antigua","De un accidente"],answer:1,type:"Causa",why:"La abuela era de baja estatura y los espejos se pusieron a su altura."},
 {q:"¿Por qué la nieta los dejó así?",options:["Por sentimentalismo","Porque obligaba a los visitantes a repetir el gesto de su abuela","Por no gastar en la mudanza","Porque no alcanzaba a moverlos"],answer:1,type:"Inferencia",why:"Ella misma descarta el sentimentalismo y explica ese motivo."},
 {q:"¿Qué efecto imprevisto produjo la costumbre?",options:["Que las visitas dejaran de venir","Que las conversaciones dejaran de ser triviales","Que se rompieran varios espejos","Que otros vecinos la imitaran"],answer:1,type:"Idea principal",why:"La sorpresa abría conversaciones que en otras casas no ocurren."}]}
+,
+{id:"reloj",titulo:"El reloj de la estación",cat:["Escena"],nivel:"N2",
+texto:`El reloj grande de la estación de Ombó lleva cuatro años marcando las diez y veinte. Nadie lo ha reparado y nadie parece tener prisa por hacerlo.
+
+Los pasajeros nuevos lo miran y se confunden. Los que viajan seguido ni siquiera levantan la vista. Ya saben que la hora buena está en el letrero digital de la puerta.
+
+El jefe de estación se llama Osvaldo y lleva doce años en el puesto. Cuando alguien le pregunta por el reloj, siempre responde lo mismo: que la pieza que falta ya no se fabrica.
+
+Hace dos inviernos vino un técnico de la capital. Estuvo tres horas arriba, en el cuarto del mecanismo, y bajó con las manos vacías. Dijo que había que mandar hacer la pieza a mano y que costaría más que un reloj nuevo.
+
+Los vecinos del pueblo firmaron una carta para pedir la reparación. Juntaron ochenta firmas. La carta se envió y nunca hubo respuesta.
+
+Con el tiempo, el reloj detenido se volvió una especie de seña. La gente dice que se ven en la estación, debajo de las diez y veinte, y todos entienden.
+
+Osvaldo cuenta que una pareja se conoció ahí, esperando trenes distintos. Volvieron a los cinco años y se tomaron una foto bajo el reloj. Él les preguntó si querían que lo arreglaran. Los dos dijeron que no.`,
+quiz:[
+{q:"¿Qué hora marca el reloj?",options:["Las diez y veinte","Las doce en punto","Las cuatro y media","Cambia según el día"],answer:0,type:"Dato",why:"Lleva cuatro años detenido en las diez y veinte."},
+{q:"¿Qué dijo el técnico de la capital?",options:["Que la reparación era sencilla","Que la pieza debía hacerse a mano y costaría más que un reloj nuevo","Que faltaba el motor","Que volvería en invierno"],answer:1,type:"Detalle",why:"Bajó con las manos vacías y explicó eso."},
+{q:"¿Cuántas firmas juntaron los vecinos?",options:["Veinte","Cincuenta","Ochenta","Doscientas"],answer:2,type:"Dato",why:"La carta llevaba ochenta firmas y nunca hubo respuesta."},
+{q:"¿Qué respondió la pareja cuando les ofrecieron arreglarlo?",options:["Que sí, cuanto antes","Que no","Que lo pensarían","Que pagarían la mitad"],answer:1,type:"Inferencia",why:"Los dos dijeron que no, porque el reloj detenido significa algo para ellos."}]},
+
+{id:"zapatos",titulo:"Los zapatos del número doce",cat:["Relato"],nivel:"N2",
+texto:`En la zapatería de la calle Nueve había un par de zapatos negros del número doce. Estuvieron en el aparador durante siete años sin que nadie los comprara.
+
+El dueño, don Rubén, los cambiaba de lugar cada temporada. Los ponía adelante en invierno y atrás en verano. Nunca les bajó el precio.
+
+Su hija le insistía en rematarlos. Decía que ocupaban espacio y que nadie en el barrio calzaba ese número. Don Rubén contestaba que el cliente iba a llegar.
+
+Los zapatos se llenaron de polvo dos veces al año, cuando limpiaban el aparador a fondo. La etiqueta amarilleó. La caja original se rompió y él consiguió otra.
+
+Un jueves de octubre entró un hombre muy alto. Preguntó si tenían algo del doce. Don Rubén no dijo una palabra. Fue al aparador, sacó los zapatos y se los dio.
+
+El hombre se los probó y le quedaron perfectos. Contó que llevaba años comprando por internet porque en las tiendas nunca había su medida.
+
+Pagó el precio completo, sin pedir descuento. Preguntó si tenían otro par igual. No había.
+
+Don Rubén cerró temprano ese día. Su hija le preguntó por qué. Él le dijo que quería celebrar, aunque no explicó exactamente qué.`,
+quiz:[
+{q:"¿Cuánto tiempo estuvieron los zapatos en el aparador?",options:["Un año","Tres años","Siete años","Doce años"],answer:2,type:"Dato",why:"Estuvieron siete años sin que nadie los comprara."},
+{q:"¿Qué le insistía su hija?",options:["Que los rematara","Que los regalara","Que comprara más pares","Que cerrara la tienda"],answer:0,type:"Detalle",why:"Decía que ocupaban espacio y que nadie calzaba ese número."},
+{q:"¿Por qué el hombre alto compraba por internet?",options:["Porque era más barato","Porque en las tiendas nunca había su medida","Porque vivía lejos","Porque no le gustaba salir"],answer:1,type:"Causa",why:"Nunca encontraba su número en las tiendas."},
+{q:"¿Qué hizo don Rubén al final del día?",options:["Bajó los precios","Cerró temprano para celebrar","Llamó a su hija para discutir","Pidió más zapatos del doce"],answer:1,type:"Inferencia",why:"Cerró temprano diciendo que quería celebrar."}]},
+
+{id:"aviso",titulo:"Aviso en el tablero del edificio",cat:["Carta"],nivel:"N2",
+texto:`A todos los habitantes del edificio:
+
+Como saben, la puerta principal quedó descompuesta el fin de semana pasado. Ya vino el cerrajero y dejó una chapa provisional.
+
+La chapa nueva es más dura que la anterior. Hay que girar la llave con firmeza y empujar al mismo tiempo. Si la fuerzan de lado, se va a trabar otra vez.
+
+El cerrajero regresa el viernes con la chapa definitiva. Va a estar aquí entre las nueve y las once. Ese rato la puerta quedará abierta, así que les pedimos que no dejen paquetes en la entrada.
+
+Aprovechamos para recordar dos cosas.
+
+Primera: la basura se saca a partir de las siete de la noche, no antes. Las bolsas que salen temprano terminan abiertas en la banqueta.
+
+Segunda: el cuarto de lavado se apaga a las diez. No es una regla nuestra, es el temporizador que instaló la compañía de luz. Si su ropa queda adentro, tendrá que esperar al día siguiente.
+
+Cualquier duda pueden dejarla escrita en este mismo tablero. Revisamos los recados los martes y los sábados.
+
+Gracias por su paciencia.
+
+El comité del edificio.`,
+quiz:[
+{q:"¿Cómo hay que abrir la chapa provisional?",options:["Girando la llave con firmeza y empujando","Jalando la puerta hacia afuera","Moviendo la llave de lado","Con dos llaves distintas"],answer:0,type:"Aplicación",why:"Girar con firmeza y empujar; si la fuerzan de lado se traba."},
+{q:"¿Qué pasará el viernes entre las nueve y las once?",options:["Cortarán la luz","La puerta quedará abierta por el cambio de chapa","Se lavará la fachada","Habrá junta de vecinos"],answer:1,type:"Detalle",why:"El cerrajero vuelve con la chapa definitiva y la puerta queda abierta."},
+{q:"¿A qué hora se saca la basura?",options:["A partir de las siete de la noche","Antes del mediodía","A cualquier hora","A las diez"],answer:0,type:"Dato",why:"A partir de las siete de la noche, no antes."},
+{q:"¿Por qué se apaga el cuarto de lavado a las diez?",options:["Por una regla del comité","Por un temporizador de la compañía de luz","Por el ruido","Porque no hay agua de noche"],answer:1,type:"Causa",why:"El aviso aclara que no es regla suya sino el temporizador instalado."}]},
+
+{id:"duarte",titulo:"La apuesta de los hermanos Duarte",cat:["Relato"],nivel:"N3",
+texto:`Los hermanos Duarte llevaban discutiendo casi un año sobre cuál de los dos caminaba más rápido. Ninguno cedía y la discusión se repetía en cada comida familiar.
+
+Para terminar el asunto decidieron hacer una prueba formal un domingo por la mañana. Eligieron el camino que rodea la laguna, que según todos mide poco más de cuatro kilómetros.
+
+El mayor, Tino, salió con paso largo y se adelantó de inmediato. El menor, Cleto, mantuvo un ritmo parejo y no intentó alcanzarlo en ningún momento.
+
+A la mitad del recorrido, Tino se detuvo dos veces para recuperar el aliento. Cleto lo rebasó en la segunda parada sin decir nada.
+
+Cleto llegó al punto de salida cuatro minutos antes que su hermano. La familia, que esperaba con el reloj, dio el asunto por resuelto.
+
+Tino no aceptó el resultado. Argumentó que la prueba medía resistencia y no velocidad, y que en un tramo corto él ganaba sin ninguna dificultad.
+
+Repitieron la prueba el domingo siguiente en un tramo de doscientos metros. Tino ganó por bastante margen y volvió a declararse el más rápido.
+
+Desde entonces cada uno cuenta la historia con la carrera que ganó. La madre, cansada del tema, dice que los dos tienen razón y que ninguno escucha.`,
+quiz:[
+{q:"¿Qué distancia tenía el primer recorrido?",options:["Dos kilómetros","Poco más de cuatro kilómetros","Diez kilómetros","Doscientos metros"],answer:1,type:"Dato",why:"El camino que rodea la laguna mide poco más de cuatro kilómetros."},
+{q:"¿Por qué Tino perdió la primera prueba?",options:["Se perdió en el camino","Se detuvo dos veces a recuperar el aliento","Empezó tarde","Se lesionó"],answer:1,type:"Causa",why:"Salió muy rápido y tuvo que parar dos veces."},
+{q:"¿Cuál fue el argumento de Tino para no aceptar el resultado?",options:["Que el reloj estaba mal","Que la prueba medía resistencia y no velocidad","Que el camino era más largo para él","Que su hermano hizo trampa"],answer:1,type:"Detalle",why:"Sostuvo que en tramo corto él ganaba sin dificultad."},
+{q:"¿Qué opina la madre del asunto?",options:["Que Cleto es más rápido","Que los dos tienen razón y ninguno escucha","Que deben repetir la prueba","Que la apuesta fue injusta"],answer:1,type:"Idea principal",why:"Cansada del tema, dice que ambos tienen razón y no se escuchan."}]},
+
+{id:"portero",titulo:"El cuaderno del portero",cat:["Descripción"],nivel:"N3",
+texto:`En la caseta de la entrada hay un cuaderno de pasta gruesa que el portero llena todas las noches antes de irse. Nadie se lo pidió y nadie lo revisa.
+
+En la primera columna anota la hora. En la segunda, lo que ocurrió. En la tercera, si hizo falta avisarle a alguien.
+
+La mayoría de las entradas son breves y repetidas. Se fue la luz veinte minutos. Llegó un paquete sin destinatario. El portón se quedó abierto por el viento.
+
+De vez en cuando aparece algo distinto. Hay una entrada de hace tres años que dice, solamente, que se escuchó un piano en el edificio de enfrente durante casi una hora. No hay más explicación.
+
+El portero anterior también llevaba un cuaderno, pero lo tiraba al terminar el año. El actual los guarda todos en una caja bajo el escritorio.
+
+Cuando alguien reclama algo, el cuaderno resuelve la discusión en un minuto. Si un inquilino asegura que dejó un paquete a las seis, ahí está la hora exacta y la descripción.
+
+Por eso el administrador, que al principio consideraba la costumbre una pérdida de tiempo, ahora pregunta por el cuaderno antes que por cualquier otra cosa.`,
+quiz:[
+{q:"¿Qué anota el portero en la segunda columna?",options:["La hora","Lo que ocurrió","A quién avisó","El nombre del inquilino"],answer:1,type:"Detalle",why:"Primera columna la hora, segunda lo ocurrido, tercera si avisó a alguien."},
+{q:"¿Qué dice la entrada de hace tres años?",options:["Que hubo un robo","Que se escuchó un piano casi una hora","Que se inundó la caseta","Que faltó agua"],answer:1,type:"Detalle",why:"Solo eso, sin más explicación."},
+{q:"¿Qué hacía el portero anterior con sus cuadernos?",options:["Los guardaba en una caja","Los entregaba al administrador","Los tiraba al terminar el año","Los prestaba a los vecinos"],answer:2,type:"Detalle",why:"El anterior los tiraba; el actual los guarda todos."},
+{q:"¿Cómo cambió la opinión del administrador?",options:["Pasó de considerarlo inútil a consultarlo primero","Sigue creyendo que es una pérdida de tiempo","Pidió que dejara de escribirlo","Decidió llevar él el cuaderno"],answer:0,type:"Inferencia",why:"Al principio lo veía como pérdida de tiempo y ahora pregunta por él antes que nada."}]},
+
+{id:"piano",titulo:"La subasta del piano",cat:["Relato"],nivel:"N4",
+texto:`El piano vertical que se subastó aquel sábado en el salón municipal llevaba veintidós años en la bodega de una escuela que había cerrado. Nadie recordaba con exactitud cómo había llegado hasta allí.
+
+El anuncio decía que el instrumento estaba completo pero desafinado, y que se vendía en el estado en que se encontraba, sin garantía de ningún tipo. El precio inicial era bajo, casi simbólico.
+
+Se presentaron tres interesados. Un restaurador de muebles que pensaba desarmarlo para aprovechar la madera, una maestra de música que buscaba algo para su salón, y un hombre mayor al que nadie conocía y que llegó con quince minutos de retraso.
+
+Las primeras pujas subieron despacio, sin sorpresas. El restaurador se retiró pronto, porque el precio ya superaba lo que valía la madera.
+
+La maestra y el desconocido siguieron subiendo durante casi diez minutos. Cuando la cifra alcanzó el triple del valor estimado, la maestra bajó la mano y se disculpó con el subastador.
+
+El hombre pagó en efectivo y pidió que le permitieran quedarse un momento a solas con el instrumento.
+
+Los organizadores accedieron, sin entender la petición. Desde el pasillo lo escucharon tocar durante unos minutos una pieza corta y bastante torpe, que se interrumpía y volvía a empezar.
+
+Cuando salió, no dio ninguna explicación y nadie se atrevió a pedírsela.`,
+quiz:[
+{q:"¿Cuánto tiempo llevaba el piano en la bodega?",options:["Cinco años","Doce años","Veintidós años","Cuarenta años"],answer:2,type:"Dato",why:"Llevaba veintidós años en la bodega de una escuela cerrada."},
+{q:"¿Por qué se retiró el restaurador?",options:["Porque el piano no le gustó","Porque el precio superó lo que valía la madera","Porque llegó tarde","Porque perdió interés"],answer:1,type:"Causa",why:"Pensaba desarmarlo y el precio dejó de convenirle."},
+{q:"¿Hasta dónde llegó la puja?",options:["Al doble del valor estimado","Al triple del valor estimado","Al precio inicial","No se dice"],answer:1,type:"Dato",why:"Al alcanzar el triple, la maestra se retiró."},
+{q:"¿Qué hizo el comprador después de pagar?",options:["Se lo llevó de inmediato","Pidió quedarse a solas y tocó una pieza breve","Pidió afinarlo antes","Lo revendió ahí mismo"],answer:1,type:"Detalle",why:"Tocó unos minutos una pieza corta y torpe y salió sin explicar nada."}]},
+
+{id:"terreno",titulo:"Informe sobre el terreno de la calle Once",cat:["Descripción"],nivel:"N4",
+texto:`El terreno baldío ubicado en el número catorce de la calle Once permanece sin construcción desde que se demolió la bodega que ocupaba el predio, hace aproximadamente dieciséis años.
+
+La superficie es irregular y presenta un desnivel notorio hacia el fondo, lo que provoca que el agua de lluvia se acumule en la esquina posterior y tarde varios días en filtrarse. Ese estancamiento explica la vegetación densa que solo crece en esa franja.
+
+Durante el recorrido se identificaron restos de la cimentación anterior, que no fueron retirados en su momento y que dificultan cualquier excavación superficial. También se observaron dos árboles de tamaño considerable, ambos en buen estado, cuyas raíces se extienden hacia la barda medianera.
+
+Los vecinos consultados señalaron que el predio se utiliza de manera informal como estacionamiento durante los fines de semana, práctica que nadie ha autorizado formalmente pero que tampoco ha generado quejas.
+
+La barda que colinda con la propiedad del lado sur muestra inclinación hacia el interior del terreno y presenta grietas visibles en su tercio inferior. Se recomienda su revisión antes de cualquier trabajo.
+
+En cuanto a servicios, la toma de agua está clausurada y el registro eléctrico fue retirado, por lo que ambas conexiones tendrían que solicitarse de nuevo.`,
+quiz:[
+{q:"¿Por qué se acumula agua en el fondo del terreno?",options:["Por una fuga de la toma de agua","Por un desnivel hacia el fondo","Por la lluvia constante","Por las raíces de los árboles"],answer:1,type:"Causa",why:"El desnivel hace que el agua se junte en la esquina posterior."},
+{q:"¿Qué dificulta la excavación superficial?",options:["Los restos de la cimentación anterior","La vegetación densa","La barda inclinada","El estacionamiento informal"],answer:0,type:"Detalle",why:"No retiraron la cimentación de la bodega demolida."},
+{q:"¿Para qué usan el predio los vecinos?",options:["Como jardín","Como estacionamiento los fines de semana","Como tiradero","Como cancha"],answer:1,type:"Detalle",why:"Uso informal como estacionamiento, sin autorización ni quejas."},
+{q:"¿Qué pasa con los servicios?",options:["Funcionan con normalidad","La toma de agua está clausurada y el registro eléctrico fue retirado","Solo falta el agua","Solo falta la luz"],answer:1,type:"Detalle",why:"Ambas conexiones tendrían que solicitarse de nuevo."}]},
+
+{id:"boda",titulo:"El malentendido de la boda",cat:["Relato"],nivel:"N4",
+texto:`La confusión empezó con una invitación impresa que contenía un error mínimo y difícil de detectar: el número del salón aparecía como catorce cuando el correcto era el cuarenta.
+
+Sesenta invitados llegaron puntualmente al salón catorce, un local ubicado a doce cuadras del verdadero, donde esa misma tarde se celebraba el cumpleaños de un hombre llamado Aurelio.
+
+Durante casi veinte minutos ninguno de los dos grupos advirtió el problema, en parte porque el salón era amplio y en parte porque los recién llegados asumieron que la novia se estaba retrasando, cosa perfectamente habitual.
+
+El equívoco terminó cuando el homenajeado subió a agradecer y varios invitados se miraron desconcertados al escuchar un nombre que no correspondía a ninguno de los novios.
+
+Hubo entonces una salida apresurada y bastante desordenada, con gente buscando su coche y llamando por teléfono al mismo tiempo. Aurelio, lejos de molestarse, salió a la calle a despedirlos y les deseó suerte.
+
+Los invitados llegaron a la boda con casi cuarenta minutos de retraso, justo cuando la ceremonia terminaba.
+
+Con los años, esa parte de la historia se contó más veces que la boda misma. Los novios terminaron por incluirla en su propio relato, y en el aniversario número diez invitaron a Aurelio, que llegó puntual y esa vez sí estaba en el lugar correcto.`,
+quiz:[
+{q:"¿Cuál fue el error de la invitación?",options:["La hora","El número del salón: catorce en vez de cuarenta","La fecha","El nombre de la novia"],answer:1,type:"Causa",why:"Aparecía el catorce cuando el correcto era el cuarenta."},
+{q:"¿Qué se celebraba en el salón equivocado?",options:["Otra boda","El cumpleaños de un hombre llamado Aurelio","Una graduación","Una junta"],answer:1,type:"Detalle",why:"Esa tarde se celebraba ahí el cumpleaños de Aurelio."},
+{q:"¿Cómo se descubrió el error?",options:["Por una llamada de los novios","Cuando el homenajeado agradeció y el nombre no correspondía","Por el personal del salón","Por la decoración"],answer:1,type:"Detalle",why:"Los invitados escucharon un nombre que no era de los novios."},
+{q:"¿Cómo reaccionó Aurelio?",options:["Se molestó","Salió a despedirlos y les deseó suerte","Les cobró la entrada","Se fue del salón"],answer:1,type:"Inferencia",why:"Lejos de molestarse, los acompañó a la salida."}]},
+
+{id:"asamblea",titulo:"Acta de la asamblea de vecinos",cat:["Descripción"],nivel:"N5",
+texto:`Siendo las diecinueve horas con quince minutos del día señalado en la convocatoria, y habiéndose verificado la existencia del quórum requerido conforme al reglamento interno vigente, se declaró formalmente instalada la asamblea ordinaria de vecinos del conjunto habitacional, con la asistencia de veintitrés propietarios y la representación acreditada de otros siete mediante carta poder simple.
+
+En el primer punto del orden del día se sometió a consideración de los asistentes el informe de gastos correspondiente al periodo anterior, documento que había sido distribuido con cinco días de anticipación y respecto del cual se formularon dos observaciones, ambas relativas a la partida de mantenimiento de áreas comunes, cuyo incremento respecto del periodo previo no se encontraba suficientemente desglosado.
+
+La administración explicó que dicho incremento obedecía a la sustitución imprevista de la bomba de agua, gasto que no había sido contemplado en el presupuesto original y que se cubrió con recursos del fondo de reserva, circunstancia que fue aceptada por la asamblea una vez que se exhibió la factura correspondiente.
+
+En el segundo punto, y tras una deliberación que se prolongó por espacio de cuarenta minutos sin que se alcanzara consenso, se acordó posponer la decisión sobre el cambio de empresa de vigilancia hasta contar con al menos tres cotizaciones que permitan una comparación en condiciones equivalentes, quedando la administración encargada de recabarlas antes de la siguiente sesión ordinaria.`,
+quiz:[
+{q:"¿Cuántos propietarios asistieron?",options:["Siete","Veintitrés","Treinta","Quince"],answer:1,type:"Dato",why:"Veintitrés propietarios, más siete representados por carta poder."},
+{q:"¿Sobre qué partida se hicieron las observaciones?",options:["Vigilancia","Mantenimiento de áreas comunes","Agua potable","Administración"],answer:1,type:"Detalle",why:"Las dos observaciones fueron sobre el incremento en esa partida."},
+{q:"¿Cómo se cubrió el gasto de la bomba de agua?",options:["Con una cuota extraordinaria","Con recursos del fondo de reserva","Con un crédito","No se cubrió"],answer:1,type:"Causa",why:"Fue un gasto imprevisto pagado con el fondo de reserva."},
+{q:"¿Qué se acordó respecto de la empresa de vigilancia?",options:["Cambiarla de inmediato","Posponer la decisión hasta tener tres cotizaciones","Renovar el contrato actual","Someterlo a votación secreta"],answer:1,type:"Detalle",why:"Se pospuso para comparar al menos tres cotizaciones equivalentes."}]},
+
+{id:"vidal",titulo:"La teoría del señor Vidal",cat:["Relato"],nivel:"N5",
+texto:`El señor Vidal, que había trabajado durante treinta y un años detrás del mostrador de una ferretería y que en ese tiempo llegó a conocer a casi todos los habitantes del barrio por su nombre de pila, sostenía una teoría que exponía con paciencia a quien tuviera la mala fortuna de preguntarle algo dos veces.
+
+Según él, la manera en que una persona pide un clavo revela con una precisión asombrosa la clase de vida que lleva, porque quien entra sabiendo la medida exacta y el uso que le dará ha planeado su tarde entera, mientras que quien pide simplemente un clavo, sin más datos, está resolviendo un problema que le cayó encima esa misma mañana.
+
+La teoría se extendía después a las brochas, a los tornillos y a las bisagras, con distinciones cada vez más finas que solo él parecía capaz de sostener sin perderse, y que sus clientes escuchaban con una mezcla de paciencia y diversión que él interpretaba invariablemente como interés genuino.
+
+Cuando la ferretería cerró, después de que abriera una tienda grande a cuatro calles de distancia, varios vecinos se acercaron a despedirse y uno de ellos, quizá para llenar el silencio incómodo del momento, le preguntó qué clase de vida revelaba el hecho de cerrar un negocio de treinta y un años.
+
+El señor Vidal se quedó pensando un rato bastante largo y respondió, sin rastro alguno de amargura, que revelaba una vida en la que uno había durado más que su oficio.`,
+quiz:[
+{q:"¿Cuánto tiempo trabajó el señor Vidal en la ferretería?",options:["Diez años","Veinte años","Treinta y un años","Cuarenta años"],answer:2,type:"Dato",why:"Estuvo treinta y un años detrás del mostrador."},
+{q:"Según su teoría, ¿qué revela quien pide un clavo sin dar más datos?",options:["Que es experto","Que resuelve un problema que le cayó encima esa mañana","Que tiene prisa por ahorrar","Que no sabe usar herramientas"],answer:1,type:"Inferencia",why:"Frente a quien planeó su tarde, este improvisa ante un imprevisto."},
+{q:"¿Por qué cerró la ferretería?",options:["Por la edad del dueño","Porque abrió una tienda grande a cuatro calles","Por una deuda","Por una mudanza"],answer:1,type:"Causa",why:"La competencia de la tienda grande cercana."},
+{q:"¿Qué respondió a la última pregunta?",options:["Que revelaba mala suerte","Que revelaba una vida en la que uno duró más que su oficio","Que prefería no contestar","Que era culpa del barrio"],answer:1,type:"Idea principal",why:"Contestó eso sin rastro de amargura."}]}
 ];
 
 const GUIA=[
@@ -1505,8 +1686,7 @@ async function pintarPerfil(){
   $("#stEfe").textContent=h.length?Math.round(h.slice(-5).reduce((a,x)=>a+x.efe,0)/Math.min(h.length,5)):"—";
   $("#rowSpeedV").textContent=S.wpm+" ppm";
   $("#rowModeV").textContent=MODOS[S.modo];
-  NIVSUG=calcularNivelSugerido(h);
-  $("#rowNivelV").textContent=S.nivel?("Nivel "+S.nivel+" · "+NIVEL[S.nivel]):("Automático · ahora nivel "+NIVSUG);
+
   $$("#temaSeg button").forEach(b=>b.setAttribute("aria-pressed",
     (b.dataset.t===document.documentElement.getAttribute("data-theme"))+""));
 }
@@ -1515,7 +1695,7 @@ async function pintarPerfil(){
    ESTADO Y NAVEGACIÓN
    ============================================================ */
 const MODOS={rsvp:"Palabra",chunk:"Grupos",guide:"Guiado",free:"Libre"};
-const S={fuente:"lib",libId:"cafe",filtro:"Todos",limite:6,quizSrc:"ia",texto:"",tokens:[],
+const S={fuente:"lib",libId:"llave",filtro:"Todos",limite:6,quizSrc:"ia",texto:"",tokens:[],
   wpm:300,modo:"rsvp",run:"rsvp",origen:"leer",nivel:0,bionic:false,ramp:true,
   fuenteTip:"serif",fs:18,lh:1.9,col:70,foco:0,
   idx:0,startIdx:0,pausas:0,playing:false,timer:null,t0:0,ms:0,quiz:[],resp:[],qIdx:0};
@@ -1568,22 +1748,14 @@ $("#rowRead").onclick=()=>abrir("pane-read","Lectura cómoda");
 $("#rowSpeed").onclick=()=>abrir("pane-speed","Velocidad");
 $("#rowMode").onclick=()=>abrir("pane-mode","Modo de lectura");
 $("#rowHelp").onclick=()=>tab("guia");
-$("#rowNivel").onclick=()=>{
-  $$("#nivSeg .opt").forEach(b=>b.setAttribute("aria-pressed",(+b.dataset.n===S.nivel)+""));
-  abrir("pane-nivel","Nivel de dificultad");
-};
-$$("#nivSeg .opt").forEach(b=>b.onclick=()=>{
-  S.nivel=+b.dataset.n;
-  $$("#nivSeg .opt").forEach(x=>x.setAttribute("aria-pressed",(x===b)+""));
-  store.set("nivelPref",S.nivel);armarFeed();fIdx=0;pintarPerfil();
-});
+
 $("#loginBtn").onclick=()=>abrir("pane-login","Iniciar sesión");
 $$(".loginopt").forEach(b=>b.onclick=()=>{cerrar();setTimeout(()=>toast("Disponible al conectar el servidor"),320)});
 $("#rowWipe").onclick=async()=>{
   await store.set("sesiones",[]);await store.set("progreso",{});
   PERFIL={xp:0,racha:0,ultimo:"",mejorEfe:0};await store.set("perfil",PERFIL);
   try{Object.keys(localStorage).filter(k=>k.indexOf("ritmo:")===0).forEach(k=>localStorage.removeItem(k))}catch(e){}
-  store.mem={};PROG={};HIST=[];armarFeed();fIdx=0;pintarPerfil();toast("Datos borrados")};
+  store.mem={};PROG={};HIST=[];pintarPerfil();toast("Datos borrados")};
 $$("#temaSeg button").forEach(b=>b.onclick=async()=>{
   document.documentElement.setAttribute("data-theme",b.dataset.t);
   $$("#temaSeg button").forEach(x=>x.setAttribute("aria-pressed",(x===b)+""));
@@ -1651,82 +1823,30 @@ function nivelTexto(txt){
   const sil=pal.reduce((a,w)=>a+silW(w),0);
   const L=206.84-60*(sil/pal.length)-1.02*(pal.length/ora);
   const largas=pal.filter(w=>w.replace(/[^\wáéíóúüñ]/gi,"").length>=10).length/pal.length*100;
-  let n=L>78?1:L>68?2:L>58?3:L>48?4:5;
+  let n=L>86?1:L>78?2:L>62?3:L>50?4:5;
   if(largas>=13&&n<5)n++;
   return n;
 }
 const NIVEL=["","Muy fácil","Sencillo","Intermedio","Avanzado","Exigente"];
 TEXTOS.forEach(t=>{t.lvl=nivelTexto(t.texto)});
 const cvDe=t=>"nv"+(t.lvl||3);
-let FEED=[],NIVSUG=2;
-function calcularNivelSugerido(hist){
-  if(!hist||!hist.length)return 2;
-  const u=hist.slice(-3),c=u.reduce((a,x)=>a+(x.comp||0),0)/u.length;
-  const base=u.reduce((a,x)=>a+(x.nivel||NIVSUG),0)/u.length;
-  let n=Math.round(base);
-  if(c>=85)n++;else if(c<=55)n--;
-  return Math.max(1,Math.min(5,n));
+/* ---------- selección aleatoria de lectura ---------- */
+const esPractica=t=>t.cat[0]!=="Lectura rápida";
+function disponibles(n){
+  const pool=TEXTOS.filter(t=>esPractica(t)&&t.lvl===n);
+  return {pool,nuevas:pool.filter(t=>!(PROG[t.id]&&PROG[t.id].done))};
 }
-function armarFeed(){
-  const obj=S.nivel||NIVSUG;
-  const base=TEXTOS.filter(t=>t.cat[0]!=="Lectura rápida");
-  const peso=t=>{const p=PROG[t.id];
-    return Math.abs((t.lvl||3)-obj)*10+(p&&p.done?4:0)+(p&&p.idx>0?-1:0)+Math.random()*3};
-  FEED=base.slice().sort((a,b)=>peso(a)-peso(b));
-}
-let fIdx=0,fDrag=0;
-function altoFeed(){return $("#feed").clientHeight||1}
-const CH=.68,PASO=.72;
-function moverFeed(anim){
-  const tr=$("#track"),H=altoFeed();
-  if(fIdx>FEED.length-1)fIdx=Math.max(FEED.length-1,0);
-  tr.style.transition=anim?"transform .4s cubic-bezier(.22,.8,.24,1)":"none";
-  tr.style.transform="translate3d(0,"+(-fIdx*PASO*H+(1-CH)/2*H+fDrag)+"px,0)";
-  $$("#track .book").forEach((b,i)=>b.classList.toggle("act",i===fIdx));
-  const sh=$("#swipeHint");if(sh)sh.style.opacity=fIdx?"0":"";
-}
-function irA(i,anim){
-  fIdx=Math.max(0,Math.min(FEED.length-1,i));fDrag=0;moverFeed(anim!==false);
-}
-(function(){
-  const f=$("#feed");let y0=0,t0=0,activo=false,lock=false;
-  f.addEventListener("touchstart",e=>{if(e.touches.length>1)return;
-    activo=true;y0=e.touches[0].clientY;t0=Date.now();fDrag=0;moverFeed(false)},{passive:true});
-  f.addEventListener("touchmove",e=>{if(!activo)return;
-    let d=e.touches[0].clientY-y0;
-    if((fIdx===0&&d>0)||(fIdx===FEED.length-1&&d<0))d*=.28;
-    fDrag=d;moverFeed(false)},{passive:true});
-  f.addEventListener("touchend",()=>{if(!activo)return;activo=false;
-    const dt=Date.now()-t0,v=Math.abs(fDrag)/Math.max(dt,1);
-    if(fDrag<-60||(fDrag<-18&&v>.45))irA(fIdx+1);
-    else if(fDrag>60||(fDrag>18&&v>.45))irA(fIdx-1);
-    else{fDrag=0;moverFeed(true)}});
-  f.addEventListener("wheel",e=>{e.preventDefault();
-    if(lock)return;if(Math.abs(e.deltaY)<12)return;
-    lock=true;irA(fIdx+(e.deltaY>0?1:-1));setTimeout(()=>lock=false,420)},{passive:false});
-  addEventListener("resize",()=>moverFeed(false));
-  addEventListener("keydown",e=>{
-    if($("#v-home").classList.contains("hidden")||paneOn)return;
-    if(e.key==="ArrowDown"){e.preventDefault();irA(fIdx+1)}
-    if(e.key==="ArrowUp"){e.preventDefault();irA(fIdx-1)}});
-})();
-function pintarFeed(){
-  $("#track").innerHTML=FEED.map((t,i)=>{
-    const n=tok(t.texto).length,pc=pctDe(t.id);
-    return '<div class="book'+(i===fIdx?" act":"")+'" data-id="'+t.id+'" style="top:'+(i*PASO*100)+'%">'+
-      '<div class="card3 '+cvDe(t)+'" data-go="'+t.id+'">'+
-        '<span class="top"><span class="dot"></span><span class="cat">Nivel '+t.lvl+' · '+NIVEL[t.lvl]+'</span>'+
-          '<span class="st">'+t.cat[0]+'</span></span>'+
-        '<div class="big">'+dur(n/S.wpm)+'</div>'+
-        '<div class="sub">'+n+' palabras · '+S.wpm+' ppm</div>'+
-        '<h3>'+t.titulo+'</h3>'+
-        '<p class="snip">'+esc(t.texto.slice(0,150))+'…</p>'+
-        '<button class="go" data-go="'+t.id+'"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>'+
-        (pc?"Continuar":"Empezar")+'</button>'+
-      '</div></div>';
-  }).join("");
-  $$("#track [data-go]").forEach(el=>el.onclick=e=>{e.stopPropagation();abrirLectura(el.dataset.go,"leer")});
-  moverFeed(false);
+async function nuevaLectura(n){
+  let {pool,nuevas}=disponibles(n);
+  if(!pool.length){toast("No hay lecturas disponibles");return}
+  if(!nuevas.length){
+    pool.forEach(t=>{if(PROG[t.id])PROG[t.id].done=false});
+    await store.set("progreso",PROG);
+    nuevas=pool;
+    toast("Terminaste el nivel "+n+". Empieza otra vuelta");
+  }
+  const t=nuevas[Math.floor(Math.random()*nuevas.length)];
+  abrirLectura(t.id,"leer");
 }
 function pintarContinuar(){
   const list=TEXTOS.filter(t=>PROG[t.id]&&!PROG[t.id].done&&PROG[t.id].idx>0)
@@ -1748,17 +1868,28 @@ async function abrirLectura(id,origen,modoForzado){
   S.idx=(p&&!p.done&&p.idx>2&&p.idx<S.tokens.length-4)?p.idx:0;
   S.ms=0;iniciar(modoForzado);
 }
-function irAlLibro(id){
-  const i=FEED.findIndex(t=>t.id===id);
-  if(i>=0)irA(i);
-}
+
 async function pintarHome(){
-  const n=tok(textoSel()).length;
-  $("#pSpeed").textContent=S.wpm;$("#pMode").textContent=MODOS[S.modo];
-  $("#estTime").textContent=n?("este texto son "+dur(n/S.wpm)):"";
-  const hist=(await store.get("sesiones"))||[];
-  $("#feedKick").textContent=hist.length?"Para ti":"Empieza por aquí";
-  pintarContinuar();pintarFeed();
+  const h=(await store.get("sesiones"))||[];
+  $("#lvList").innerHTML=[1,2,3,4,5].map(n=>{
+    const {pool,nuevas}=disponibles(n);
+    const prom=pool.length?pool.reduce((a,t)=>a+tok(t.texto).length,0)/pool.length:0;
+    const det=!pool.length?"sin lecturas":
+      (nuevas.length?nuevas.length+(nuevas.length===1?" nueva":" nuevas"):"otra vuelta")+" · ≈ "+dur(prom/S.wpm);
+    return '<button class="lvrow" data-n="'+n+'"'+(pool.length?"":" disabled")+'>'+
+      '<span class="lvnum nv'+n+'">'+n+'</span>'+
+      '<span class="lvt"><b>'+NIVEL[n]+'</b><span>'+det+'</span></span>'+
+      '<span class="lvgo">▸</span></button>';
+  }).join("");
+  $$("#lvList .lvrow").forEach(b=>b.onclick=()=>{if(!b.disabled)nuevaLectura(+b.dataset.n)});
+  $("#pSpeed").textContent=S.wpm;
+  $("#pMode").textContent=MODOS[S.modo];
+  const todas=TEXTOS.filter(esPractica);
+  $("#estTime").textContent="una lectura dura ≈ "+
+    dur(todas.reduce((a,t)=>a+tok(t.texto).length,0)/todas.length/S.wpm)+" a esta velocidad.";
+  $("#startNote").textContent=h.length?"La lectura se elige al azar entre las que no has leído.":
+    "Empieza por el nivel 1 si no estás seguro.";
+  pintarContinuar();
 }
 /* arrastre horizontal en Continuar */
 let arrastro=false;
@@ -1788,7 +1919,7 @@ function pintarBiblioteca(){
   $$("#libList .tx").forEach(b=>b.onclick=()=>{
     S.fuente="lib";S.libId=b.dataset.id;$("#ownBtn").setAttribute("aria-pressed","false");
     $("#ownBox").classList.add("hidden");cerrar();
-    setTimeout(()=>irAlLibro(b.dataset.id),300);
+    setTimeout(()=>abrirLectura(b.dataset.id,"leer"),300);
   });
   $("#moreBtn").classList.toggle("hidden",S.limite>=todas.length);
   $("#moreBtn").textContent="Ver más ("+(todas.length-vis.length)+")";
@@ -2412,14 +2543,10 @@ $("#flashIn").addEventListener("keydown",e=>{if(e.key==="Enter")$("#flashGo").cl
     $$("#fontSeg .opt").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.f===S.fuenteTip)+""))}
   const p=await store.get("perfil");if(p)PERFIL=Object.assign(PERFIL,p);
   PROG=(await store.get("progreso"))||{};
-  S.nivel=(await store.get("nivelPref"))||0;
   const hist=(await store.get("sesiones"))||[];
-  NIVSUG=calcularNivelSugerido(hist);
   if(!hist.length){S.modo="free";
     $$("#modeSeg .opt").forEach(x=>x.setAttribute("aria-pressed",(x.dataset.mode==="free")+""))}
-  armarFeed();
   pintarPerfil();aplicarAjustes();pintarFiltros();ajustaFlUI();pintarHome();
-  moverFeed(false);
   try{if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0)
     navigator.serviceWorker.register("sw.js").catch(()=>{})}catch(e){}
 })();
