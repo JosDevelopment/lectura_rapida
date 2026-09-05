@@ -921,329 +921,313 @@ body.reading .app{padding-bottom:0}
 "use strict";
 
 const LIB = [
-{id:"cafe",titulo:"La ruta del café",cat:["Narrativo"],nivel:"Fácil",
-texto:`Cuenta la leyenda que, hace más de mil años, un pastor etíope llamado Kaldi notó algo extraño en su rebaño. Sus cabras, normalmente tranquilas al caer la tarde, saltaban entre las rocas y se negaban a dormir. Kaldi las observó durante días hasta descubrir el motivo: comían los frutos rojos de un arbusto que crecía en las laderas. Intrigado, probó los frutos y sintió una energía que no conocía.
+{id:"llave",titulo:"La llave verde",cat:["Relato"],nivel:"N1",
+texto:`Ana caminaba por el parque. En una banca vio algo brillante. Era una llave. Estaba pintada de verde.
 
-El pastor llevó unas ramas al monasterio más cercano. El monje que lo recibió desconfió de aquellos granos y los arrojó al fuego. Entonces ocurrió el accidente que cambió la historia: al quemarse, las semillas soltaron un aroma tan intenso que los demás monjes acudieron a la cocina. Rescataron los granos tostados, los molieron y los mezclaron con agua caliente. Aquella bebida oscura les permitió mantenerse despiertos durante las largas oraciones de la noche.
+La llave tenía un número. Decía catorce. También tenía un hilo rojo atado.
 
-Sea cierta o no la historia de Kaldi, sabemos que el cultivo del café comenzó en Etiopía y pasó a Yemen en el siglo quince. Desde el puerto de Moca, los comerciantes lo distribuyeron por todo el mundo árabe. Durante décadas Yemen protegió su monopolio: ningún grano fértil podía salir del país. La prohibición se rompió cuando un peregrino indio, Baba Budan, escondió siete semillas entre su ropa y las plantó al volver a casa.
+Ana miró alrededor. No había nadie cerca. Solo un señor que barría hojas. Ana le preguntó por la llave. El señor dijo que no era suya.
 
-En el siglo diecisiete el café llegó a Europa y provocó sospechas. Algunos lo llamaron la bebida amarga del diablo, pero la tradición cuenta que el papa Clemente octavo lo probó y decidió bendecirlo. Pronto abrieron los primeros cafés en Venecia, Londres y París. Aquellos locales se volvieron sitios de conversación, de negocios y de política. En Londres los apodaron universidades de un penique, porque por el precio de una taza cualquiera podía sentarse a escuchar y a discutir ideas.`,
+Ana guardó la llave en su bolsa. Pensó que alguien iba a volver por ella.
+
+Al día siguiente regresó al parque. Se sentó en la misma banca. Esperó una hora. Nadie llegó.
+
+Entonces vio un papel pegado en un árbol. El papel decía: perdí una llave verde. Abajo había un teléfono.
+
+Ana llamó. Contestó una mujer. La mujer se llamaba Rita. Vivía a tres calles del parque.
+
+Se vieron esa tarde. Rita traía un perro café. Le dio las gracias a Ana. Le explicó que la llave era del cuarto de su madre.
+
+Ana preguntó por el hilo rojo. Rita dijo que su madre lo puso hace años. Así podía encontrar la llave en la bolsa sin ver.
+
+Rita quiso darle dinero a Ana. Ana no lo aceptó. Pidió otra cosa. Pidió acariciar al perro.
+
+El perro se llamaba Trueno. Era muy tranquilo. No hizo ruido en todo el rato.`,
 quiz:[
-{q:"¿Qué comportamiento de las cabras llamó la atención de Kaldi?",options:["Dejaban de comer los frutos rojos","Saltaban entre las rocas y no querían dormir","Bajaban solas al monasterio","Enfermaban al caer la tarde"],answer:1,type:"Detalle",why:"El texto abre con las cabras saltando entre las rocas y negándose a dormir."},
-{q:"¿Cómo se descubrió por accidente el aroma del café?",options:["Un monje arrojó los granos al fuego","Kaldi tostó los frutos en su casa","Las semillas se secaron al sol","Un comerciante las hirvió en Moca"],answer:0,type:"Detalle",why:"El monje desconfió de los granos y los echó al fuego; al quemarse soltaron el aroma."},
-{q:"¿Cuántas semillas sacó Baba Budan de Yemen?",options:["Tres","Siete","Doce","Veinte"],answer:1,type:"Dato",why:"Escondió siete semillas entre su ropa y rompió el monopolio yemení."},
-{q:"¿Por qué llamaban a los cafés londinenses universidades de un penique?",options:["Los fundaron profesores sin trabajo","Cobraban un penique la entrada a clases","Por el precio de una taza se accedía a la conversación y al debate","Ahí se vendían libros baratos"],answer:2,type:"Inferencia",why:"El apodo venía de que con el costo de una taza cualquiera accedía a las ideas."},
-{q:"¿Cuál es la idea central del texto?",options:["El café fue prohibido por la Iglesia europea","Kaldi inventó el café tostado","El café pasó de leyenda etíope a institución social europea","Yemen sigue controlando el comercio del café"],answer:2,type:"Idea principal",why:"El texto recorre el trayecto del café desde la leyenda hasta los cafés como espacio público."}]},
+{q:"¿Qué número tenía la llave?",options:["Cuatro","Catorce","Cuarenta","Ninguno"],answer:1,type:"Dato",why:"La llave decía catorce."},
+{q:"¿Para qué servía el hilo rojo?",options:["Para colgarla en la puerta","Para encontrarla en la bolsa sin ver","Para marcar que era vieja","Para atarla al perro"],answer:1,type:"Detalle",why:"La madre de Rita lo puso para hallarla en la bolsa sin mirar."},
+{q:"¿Cómo supo Ana a quién buscar?",options:["Por un papel pegado en un árbol","Por el señor que barría","Por el perro","Por una vecina"],answer:0,type:"Detalle",why:"El papel decía que alguien perdió una llave verde y daba un teléfono."},
+{q:"¿Qué pidió Ana en lugar de dinero?",options:["Un café","Acariciar al perro","Otra llave","Nada"],answer:1,type:"Inferencia",why:"Rechazó el dinero y pidió acariciar al perro."}]},
 
-{id:"snow",titulo:"El mapa que detuvo una epidemia",cat:["Narrativo","Ciencia"],nivel:"Medio",
-texto:`En agosto de 1854 el barrio londinense del Soho se convirtió en una trampa. En diez días murieron más de quinientas personas en un radio de pocas calles. La explicación oficial era el miasma: se creía que las enfermedades viajaban en el aire corrompido que emanaba de la basura y las aguas estancadas. Contra ese aire nadie sabía qué hacer.
+{id:"gato",titulo:"El gato del piso ocho",cat:["Escena"],nivel:"N1",
+texto:`En el piso ocho vive un gato gris. Se llama Nudo. Casi nunca sale del edificio.
 
-John Snow, un médico que llevaba años sospechando que el cólera se transmitía por el agua y no por el aire, hizo algo que entonces resultaba inusual: salió a caminar. Recorrió las casas afectadas, anotó cada muerte y las dibujó como barras negras sobre un plano del barrio. El patrón apareció solo. Los casos se agrupaban alrededor de una bomba de agua pública situada en Broad Street.
+A Nudo le gusta la ventana del pasillo. Se sienta ahí toda la mañana. Mira los coches de abajo. Mueve la cola despacio.
 
-Las excepciones fueron tan reveladoras como la regla. En una fábrica de cerveza cercana no murió nadie: los trabajadores bebían cerveza, no agua. En un asilo con más de quinientos internos hubo pocas víctimas, porque el edificio tenía su propio pozo. Y en el barrio acomodado de Hampstead, lejos del foco, murió una viuda: sus criados le llevaban agua de Broad Street porque le gustaba el sabor.
+La señora Bea le pone agua. La deja en un plato azul. El plato está junto a la escalera.
 
-Snow presentó el mapa a las autoridades locales y consiguió que retiraran la palanca de la bomba. Los contagios ya venían cediendo, así que el gesto pesó menos de lo que cuenta la leyenda. Lo decisivo fue el método. Snow no vio la bacteria, que solo se identificaría décadas después, pero demostró la ruta del contagio con datos y geografía. Ese mapa se considera hoy el acta de nacimiento de la epidemiología moderna, y la razón por la que un plano con puntos sigue siendo una de las herramientas más poderosas de la salud pública.`,
+Nudo no es de nadie. Llegó hace tres años. Entró por la puerta del garaje. Nunca se fue.
+
+Cada vecino le da algo. El del piso dos le da atún. La niña del cinco le da leche. El señor del nueve no le da nada. Pero le habla.
+
+En invierno, Nudo duerme cerca del elevador. Ahí hace calor. El motor está detrás de la pared.
+
+Una vez el gato desapareció. Fueron cinco días. Los vecinos pegaron avisos. Buscaron en el sótano y en el techo.
+
+Nudo volvió solo. Estaba flaco y sucio. Tenía una cortada en la oreja.
+
+Nadie supo dónde estuvo. Nudo no lo puede contar.
+
+Ahora la puerta del garaje se cierra sola. El gato ya no puede salir. A veces se sienta enfrente y espera.
+
+La señora Bea dice que Nudo se ve triste. El señor del nueve dice que solo está viejo.`,
 quiz:[
-{q:"¿Qué explicación del cólera dominaba antes del trabajo de Snow?",options:["El contagio por contacto entre personas","La teoría del miasma o aire corrompido","La contaminación del agua","La transmisión por alimentos"],answer:1,type:"Detalle",why:"Se creía que las enfermedades viajaban en el aire corrompido de la basura y las aguas estancadas."},
-{q:"¿Por qué casi nadie murió en la fábrica de cerveza?",options:["Estaba fuera del radio del brote","Los trabajadores bebían cerveza y no agua de la bomba","Tenía un sistema de ventilación mejor","Cerró antes de la epidemia"],answer:1,type:"Causa",why:"Los cerveceros bebían cerveza, así que no tomaban agua de Broad Street."},
-{q:"¿Qué papel cumple el caso de la viuda de Hampstead?",options:["Confirma que el aire transportaba la enfermedad","Refuta la relación con la bomba","Confirma la hipótesis del agua incluso lejos del foco","Muestra que los ricos también respiraban miasma"],answer:2,type:"Inferencia",why:"Murió lejos del brote porque le llevaban agua de Broad Street: la ruta era el agua, no la cercanía."},
-{q:"Según el texto, ¿qué peso real tuvo retirar la palanca de la bomba?",options:["Detuvo la epidemia de inmediato","Menos del que cuenta la leyenda, porque los casos ya cedían","Empeoró la situación","Fue rechazado por las autoridades"],answer:1,type:"Detalle",why:"El texto aclara que los contagios ya venían cediendo y que lo decisivo fue el método."},
-{q:"¿Cuál es la tesis del texto?",options:["Que el cólera se cura con cerveza","Que Snow descubrió la bacteria del cólera","Que un método basado en datos y geografía puede probar una causa aunque no se vea el agente","Que las autoridades londinenses actuaron con rapidez"],answer:2,type:"Idea principal",why:"Snow nunca vio la bacteria; demostró la ruta del contagio con datos y mapas."}]},
+{q:"¿Cómo llegó Nudo al edificio?",options:["Lo llevó la señora Bea","Entró por la puerta del garaje","Nació ahí","Lo dejó la niña del cinco"],answer:1,type:"Detalle",why:"Entró por la puerta del garaje hace tres años."},
+{q:"¿Por qué duerme cerca del elevador en invierno?",options:["Porque ahí hay comida","Porque hace calor por el motor","Porque no hay ruido","Porque la puerta está abierta"],answer:1,type:"Causa",why:"El motor detrás de la pared calienta esa zona."},
+{q:"¿Cuántos días desapareció el gato?",options:["Dos","Cinco","Diez","Un mes"],answer:1,type:"Dato",why:"Fueron cinco días."},
+{q:"¿En qué no están de acuerdo los vecinos al final?",options:["En si el gato está triste o solo viejo","En quién le da de comer","En si debe salir","En su nombre"],answer:0,type:"Inferencia",why:"Bea dice que está triste y el señor del nueve dice que solo está viejo."}]},
 
-{id:"sueno",titulo:"Dormir para recordar",cat:["Divulgación","Ciencia"],nivel:"Medio",
-texto:`Durante siglos se creyó que dormir era una pausa, un tiempo muerto entre dos jornadas útiles. La neurociencia de las últimas décadas demostró lo contrario: mientras dormimos, el cerebro se ocupa de una de sus tareas más delicadas, que es decidir qué recuerdos conservar y cuáles descartar.
+{id:"martes",titulo:"La lista del martes",cat:["Diario"],nivel:"N1",
+texto:`Bruno hace una lista cada martes. Siempre usa el mismo cuaderno. El cuaderno es de tapa dura y color café.
 
-El proceso se llama consolidación. Cuando aprendemos algo nuevo, una fórmula, un rostro, el camino a una casa, la información queda guardada de forma frágil en el hipocampo, una estructura con forma de caballito de mar situada en la profundidad del cerebro. Durante el sueño profundo el hipocampo reproduce esas huellas a gran velocidad y las transfiere poco a poco a la corteza cerebral, donde los recuerdos se vuelven estables y se enlazan con lo que ya sabíamos.
+Escribe con lápiz. Dice que el lápiz se puede borrar. Y él cambia mucho de idea.
 
-Los experimentos son elocuentes. En un estudio clásico, dos grupos de voluntarios aprendieron una lista de palabras. El primero durmió ocho horas; el segundo permaneció despierto el mismo tiempo. Al día siguiente, quienes habían dormido recordaban cerca del cuarenta por ciento más de palabras. El efecto se repite con las habilidades motoras: un pianista que ensaya una secuencia y luego duerme la ejecuta más rápido y con menos errores, sin haber practicado otra vez.
+La lista tiene tres partes. Arriba pone lo urgente. En medio pone lo que puede esperar. Abajo pone lo que quiere hacer si sobra tiempo.
 
-La fase REM, aquella en la que soñamos, cumple una función distinta. En ella el cerebro relaciona recuerdos lejanos entre sí y favorece las asociaciones inesperadas, esas que solemos llamar creatividad. Por eso muchas soluciones aparecen de golpe por la mañana, después de una noche en la que aparentemente no hicimos nada.
+Nunca pone más de siete cosas. Aprendió eso solo. Antes ponía veinte. Terminaba tres y se sentía mal.
 
-La conclusión práctica resulta incómoda para quien estudia de madrugada: sacrificar horas de sueño para repasar más material suele ser un mal negocio. Sin sueño, buena parte de lo estudiado nunca llega a fijarse. Dormir no es el premio que sigue al aprendizaje; es su última etapa.`,
+El martes pasado su lista decía así. Urgente: pagar la luz y llamar al plomero. Puede esperar: cortar el pasto. Si sobra tiempo: buscar el disco viejo de su papá.
+
+Pagó la luz en la mañana. El plomero no contestó. El pasto quedó igual. Pero encontró el disco.
+
+Estaba en una caja arriba del ropero. Junto al disco había una foto. En la foto salía su papá con una bicicleta blanca.
+
+Bruno no conocía esa bicicleta. Le preguntó a su mamá por teléfono. Su mamá tampoco sabía.
+
+Ahora Bruno tiene una lista nueva. Arriba puso una sola cosa. Dice: preguntar por la bicicleta blanca.
+
+Lleva tres martes con esa línea. Todavía no la borra.`,
 quiz:[
-{q:"¿Qué es la consolidación, según el texto?",options:["El descanso muscular nocturno","El paso de recuerdos frágiles del hipocampo a la corteza","Repetir una lista antes de dormir","La fase en la que aparecen los sueños"],answer:1,type:"Vocabulario",why:"Es el proceso por el que las huellas frágiles del hipocampo se transfieren a la corteza y se estabilizan."},
-{q:"¿Con qué se compara la forma del hipocampo?",options:["Con una nuez","Con un caballito de mar","Con una mariposa","Con un panal"],answer:1,type:"Detalle",why:"Se describe como una estructura con forma de caballito de mar."},
-{q:"¿Cuánto más recordó el grupo que durmió?",options:["Cerca del quince por ciento","Cerca del veinticinco por ciento","Cerca del cuarenta por ciento","Más del doble"],answer:2,type:"Dato",why:"Recordaron cerca del cuarenta por ciento más de palabras."},
-{q:"¿Qué función se atribuye a la fase REM?",options:["Reparar tejido muscular","Borrar los recuerdos inútiles","Enlazar recuerdos lejanos y favorecer asociaciones creativas","Transferir memoria motora al hipocampo"],answer:2,type:"Detalle",why:"En REM el cerebro relaciona recuerdos distantes y favorece asociaciones inesperadas."},
-{q:"¿Qué implica el texto para quien estudia toda la noche?",options:["Rendirá más si duerme aunque repase menos material","Conviene estudiar durante la fase REM","La práctica motora no necesita sueño","El hipocampo trabaja mejor de madrugada"],answer:0,type:"Inferencia",why:"Si sin sueño lo estudiado no se fija, cambiar sueño por repaso es mal negocio."}]},
+{q:"¿Por qué Bruno escribe con lápiz?",options:["Porque no tiene pluma","Porque cambia mucho de idea y puede borrar","Porque es más rápido","Porque el cuaderno es viejo"],answer:1,type:"Causa",why:"Él dice que el lápiz se borra y cambia mucho de idea."},
+{q:"¿Cuántas cosas pone como máximo?",options:["Tres","Cinco","Siete","Veinte"],answer:2,type:"Dato",why:"Nunca pone más de siete."},
+{q:"¿Qué cosa de la lista sí logró hacer además de pagar la luz?",options:["Llamar al plomero","Cortar el pasto","Encontrar el disco","Nada más"],answer:2,type:"Detalle",why:"El plomero no contestó y el pasto quedó igual, pero encontró el disco."},
+{q:"¿Qué apareció junto al disco?",options:["Una carta","Una foto de su papá con una bicicleta","Dinero","Otro cuaderno"],answer:1,type:"Detalle",why:"Había una foto de su papá con una bicicleta blanca."}]},
 
-{id:"placebo",titulo:"Qué es realmente el efecto placebo",cat:["Divulgación","Ciencia"],nivel:"Medio",
-texto:`El efecto placebo suele describirse como imaginación, y esa es la parte peor entendida del fenómeno. Un placebo es una sustancia sin principio activo, pero la respuesta que provoca no es imaginaria: es medible en el cuerpo. Cuando alguien recibe una pastilla inerte creyendo que es un analgésico, su cerebro libera opioides propios, las endorfinas, y el dolor baja de verdad. Si a esa persona se le administra naloxona, un fármaco que bloquea los receptores de opioides, el alivio desaparece. La respuesta tenía una química detrás.
+{id:"escalones",titulo:"El hombre que contaba escalones",cat:["Relato"],nivel:"N2",
+texto:`Don Elías subía la escalera del edificio contando en voz baja. Lo hacía desde hacía muchos años y nadie sabía bien por qué. Los vecinos ya se habían acostumbrado a escuchar los números detrás de la puerta.
 
-Dos mecanismos la explican. El primero es la expectativa: lo que la persona anticipa modifica cómo su sistema nervioso procesa las señales. El segundo es el condicionamiento, del mismo tipo que describió Pávlov. Un paciente que durante semanas recibió un medicamento eficaz puede responder después a una pastilla idéntica pero vacía, porque el cuerpo aprendió la asociación entre el ritual y el alivio.
+Un día, la niña del segundo piso se atrevió a preguntarle. Le dijo que la escalera siempre tenía los mismos escalones, así que contar no servía de nada. Don Elías se detuvo y le explicó que no contaba escalones, sino descansos.
 
-Los detalles del ritual importan más de lo que parece. Las inyecciones producen efectos mayores que las pastillas, las pastillas caras más que las baratas, y dos comprimidos más que uno. Un médico seguro y atento produce más alivio que uno apurado, con el mismo tratamiento.
+La niña no entendió la respuesta. Él le pidió que subiera con él la mañana siguiente.
 
-Hay un límite que conviene subrayar. El placebo modula síntomas que el sistema nervioso regula, como dolor, náusea, fatiga, ansiedad o rigidez motora. No reduce un tumor, no cura una infección ni corrige una fractura. Confundir alivio con curación es la puerta de entrada a los fraudes médicos.
+Subieron juntos a las siete. En el escalón nueve, don Elías se detuvo y respiró tres veces. En el diecisiete volvió a parar. En el veintitrés se apoyó en el barandal y esperó más tiempo.
 
-Lo más desconcertante llegó en la última década. Varios ensayos entregaron placebos avisando abiertamente al paciente de que eran pastillas sin fármaco, y aun así hubo mejoría en síntomas como el colon irritable o el dolor lumbar. El engaño, al parecer, no es imprescindible. Basta con el ritual, el contexto y la expectativa de cuidado.`,
+Le explicó que su corazón funcionaba mal desde los cuarenta años. El médico le había dicho que subiera despacio y que descansara antes de sentirse cansado, no después.
+
+Contar era su manera de no olvidar dónde debía parar. Si se distraía y pasaba de largo, llegaba arriba mareado.
+
+La niña le preguntó cuántos escalones tenía el edificio en total. Don Elías respondió que treinta y ocho, pero que ese número nunca le había importado.
+
+Desde ese día, cuando la niña subía sola, también contaba. No porque lo necesitara, sino por costumbre.`,
 quiz:[
-{q:"¿Qué demuestra el experimento con naloxona?",options:["Que el placebo es puramente psicológico","Que el alivio depende de opioides liberados por el propio cerebro","Que la naloxona es un analgésico potente","Que el dolor era simulado"],answer:1,type:"Inferencia",why:"Al bloquear los receptores de opioides el alivio desaparece: la respuesta tenía base química."},
-{q:"¿Cuáles son los dos mecanismos que explican el efecto?",options:["Expectativa y condicionamiento","Sugestión e hipnosis","Genética y dieta","Dosis y frecuencia"],answer:0,type:"Detalle",why:"El texto señala la expectativa y el condicionamiento tipo Pávlov."},
-{q:"Según el texto, ¿cuál de estos NO se ve modificado por un placebo?",options:["El dolor","La náusea","El tamaño de un tumor","La fatiga"],answer:2,type:"Detalle",why:"El placebo modula síntomas regulados por el sistema nervioso, no reduce tumores ni cura infecciones."},
-{q:"¿Qué muestran los ensayos de placebo abierto?",options:["Que el engaño no siempre es necesario para obtener mejoría","Que los pacientes mienten sobre su dolor","Que el placebo funciona mejor en inyección","Que el efecto desaparece si se avisa"],answer:0,type:"Detalle",why:"Hubo mejoría aun avisando que la pastilla no tenía fármaco: bastó el ritual y el contexto."},
-{q:"¿Cuál es la advertencia central del texto?",options:["Que los médicos deberían recetar más placebos","Que confundir alivio con curación abre la puerta al fraude médico","Que las pastillas caras son mejores","Que la expectativa no influye en la salud"],answer:1,type:"Idea principal",why:"El texto subraya el límite: alivio de síntomas no equivale a curación."}]},
+{q:"¿Qué contaba realmente don Elías?",options:["Los escalones del edificio","Sus descansos","Los pisos","Los minutos"],answer:1,type:"Idea principal",why:"Él aclara que no contaba escalones sino descansos."},
+{q:"¿En qué escalón se detuvo primero?",options:["En el cinco","En el nueve","En el diecisiete","En el veintitrés"],answer:1,type:"Dato",why:"En el escalón nueve se detuvo y respiró tres veces."},
+{q:"¿Qué le había recomendado el médico?",options:["Subir rápido para ejercitarse","Descansar antes de sentirse cansado","Usar el elevador","No subir escaleras"],answer:1,type:"Detalle",why:"Debía descansar antes de sentirse cansado, no después."},
+{q:"¿Cuántos escalones tiene el edificio?",options:["Veintitrés","Treinta y ocho","Cuarenta","No se dice"],answer:1,type:"Dato",why:"Don Elías responde que treinta y ocho, aunque el número no le importaba."}]},
 
-{id:"tardigrados",titulo:"El animal que apaga su propia vida",cat:["Divulgación","Ciencia"],nivel:"Medio",
-texto:`Miden menos de un milímetro, tienen ocho patas y viven en el musgo, en la arena y en el fondo del mar. Los tardígrados parecen insignificantes hasta que se les somete a condiciones imposibles. Han resistido temperaturas cercanas al cero absoluto, presiones seis veces mayores que las del fondo oceánico, dosis de radiación mil veces superiores a las letales para un humano y la exposición directa al vacío del espacio.
+{id:"once",titulo:"La tienda que abría a las once",cat:["Escena"],nivel:"N1",
+texto:`En la esquina de Amapola y Sexta hay una tienda que abre a las once de la mañana. No tiene nombre en la fachada, solo una cortina metálica verde y un letrero pequeño con el horario.
 
-El truco no es la resistencia, sino la renuncia. Ante la desecación, el tardígrado entra en criptobiosis: expulsa casi toda el agua de su cuerpo, encoge las patas, se contrae en una estructura compacta llamada tonel y detiene su metabolismo hasta niveles indetectables. En ese estado no está exactamente vivo ni muerto. Puede permanecer así años y reanimarse en minutos al contacto con el agua.
+Adentro venden cosas que no combinan entre sí. Hay estambre de colores, pilas, cuadernos, focos y una vitrina con relojes de pulsera usados. Nada tiene precio marcado.
 
-Lo interesante es cómo evita destruirse durante el proceso. Al perder agua, las estructuras celulares deberían colapsar, porque el agua sostiene la forma de las proteínas y las membranas. Los tardígrados sintetizan proteínas desordenadas propias, conocidas como proteínas TDP, que al secarse forman una matriz vítrea que envuelve y sostiene el contenido celular como si fuera ámbar. También producen una proteína llamada Dsup que se adhiere al ADN y lo protege de la radiación.
+La dueña se llama Ofelia y calcula el precio en el momento. A veces cobra veinte pesos por un cuaderno y a la semana siguiente cobra quince por el mismo. Cuando alguien le reclama, ella responde que los precios dependen del día.
 
-En 2007 la misión europea Fotón M3 llevó tardígrados deshidratados fuera de la nave. Estuvieron diez días expuestos al vacío y a la radiación solar sin protección. Muchos volvieron a la vida al rehidratarse, y varios pusieron huevos viables.
+Los clientes llegan casi siempre por lo mismo: buscan algo que ya no venden en otro lado. Un tornillo suelto, un botón que combine, una pila cuadrada de las viejas.
 
-Conviene evitar el mito. Un tardígrado activo e hidratado es frágil: muere aplastado, cocido o sin oxígeno como cualquier animal pequeño. Su superpoder no consiste en aguantar mientras vive, sino en dejar de vivir a tiempo y volver después.`,
+Ofelia tarda en encontrar las cosas. Se mete detrás de una cortina y se escuchan cajas moviéndose. Puede tardar diez minutos. Nadie se va.
+
+Un vecino le propuso ordenar el inventario en una computadora. Ofelia le dijo que no. Explicó que si todo estuviera ordenado, ella misma dejaría de buscar, y que buscar era la parte del trabajo que le gustaba.
+
+La tienda cierra a las seis. Los domingos no abre, aunque el letrero no lo dice.`,
 quiz:[
-{q:"¿En qué consiste la criptobiosis?",options:["Un sueño profundo con metabolismo lento","Expulsar el agua del cuerpo y detener el metabolismo hasta niveles indetectables","Una migración hacia zonas húmedas","Un cambio de caparazón"],answer:1,type:"Vocabulario",why:"El animal se deshidrata, se contrae en tonel y detiene el metabolismo."},
-{q:"¿Qué función cumplen las proteínas TDP?",options:["Digieren el musgo","Forman una matriz vítrea que sostiene las estructuras celulares al secarse","Regulan la temperatura corporal","Aumentan la velocidad de reproducción"],answer:1,type:"Detalle",why:"Al secarse forman una matriz vítrea que envuelve el contenido celular como ámbar."},
-{q:"¿Qué protege específicamente la proteína Dsup?",options:["Las membranas frente al calor","El ADN frente a la radiación","Las patas durante la contracción","Los huevos frente a la desecación"],answer:1,type:"Detalle",why:"Dsup se adhiere al ADN y lo protege de la radiación."},
-{q:"¿Qué ocurrió en la misión Fotón M3 de 2007?",options:["Los tardígrados murieron en su totalidad","Sobrevivieron al vacío y varios pusieron huevos viables","Se reprodujeron en órbita en estado activo","Solo resistieron dentro de la nave"],answer:1,type:"Dato",why:"Tras diez días de exposición, muchos revivieron al rehidratarse y varios pusieron huevos."},
-{q:"¿Cuál es la corrección que hace el texto al mito del tardígrado indestructible?",options:["Que en estado activo e hidratado es tan frágil como cualquier animal pequeño","Que no sobrevive a la radiación","Que la criptobiosis dura solo horas","Que no existe en el fondo del mar"],answer:0,type:"Idea principal",why:"Su ventaja no es aguantar mientras vive, sino suspender la vida y volver."}]},
+{q:"¿Cómo se fijan los precios en la tienda?",options:["Están marcados en cada cosa","Ofelia los calcula en el momento","Los pone un catálogo","Siempre son los mismos"],answer:1,type:"Detalle",why:"Ofelia calcula el precio en el momento y varía de un día a otro."},
+{q:"¿Por qué llegan los clientes?",options:["Porque es barata","Porque buscan algo que ya no venden en otro lado","Porque abre temprano","Porque está cerca del parque"],answer:1,type:"Causa",why:"Buscan piezas sueltas que no consiguen en otras tiendas."},
+{q:"¿Por qué Ofelia rechazó ordenar el inventario?",options:["Porque no sabe usar computadoras","Porque buscar es la parte que le gusta","Porque cuesta caro","Porque tiene poco espacio"],answer:1,type:"Inferencia",why:"Si todo estuviera ordenado dejaría de buscar, y eso es lo que disfruta."},
+{q:"¿Qué dato NO aparece en el letrero?",options:["La hora de apertura","La hora de cierre","Que los domingos no abre","El horario"],answer:2,type:"Detalle",why:"Los domingos no abre, aunque el letrero no lo dice."}]},
 
-{id:"cero",titulo:"El cero, una idea peligrosa",cat:["Expositivo"],nivel:"Difícil",
-texto:`Contar objetos es una necesidad antigua; representar la ausencia de objetos es una idea sofisticada que tardó milenios en aparecer. Los sistemas numéricos más antiguos, como el egipcio o el romano, funcionaban sin ningún símbolo para la nada. Nadie escribía cero ovejas: simplemente no escribía nada.
+{id:"vecino",titulo:"Carta al vecino nuevo",cat:["Carta"],nivel:"N1",
+texto:`Estimado vecino:
 
-El primer uso del cero fue posicional y práctico. Los escribas babilonios, que trabajaban con un sistema de base sesenta, necesitaban distinguir cantidades como sesenta y uno y tres mil seiscientos uno, donde una posición queda vacía. Hacia el siglo tercero antes de nuestra era empezaron a usar dos cuñas inclinadas como marca de hueco. Ese cero todavía no era un número: era un signo de puntuación aritmética, un separador que jamás aparecía solo.
+Le escribo esta nota porque me daba pena tocar su puerta el primer día. Vivo en la casa de al lado, la que tiene el limonero seco en el frente.
 
-El salto conceptual ocurrió en la India. En el siglo séptimo el matemático Brahmagupta escribió las primeras reglas para operar con el cero como una cantidad más: un número menos sí mismo da cero; el cero sumado a un número lo deja igual; el producto de cero por cualquier número es cero. Brahmagupta también intentó dividir entre cero, y ahí se equivocó, un error que ni él ni sus sucesores inmediatos lograron resolver.
+Quería avisarle de algunas cosas que aquí nadie explica y uno tiene que descubrir solo.
 
-Desde la India el concepto viajó al mundo islámico, donde al Juarismi lo integró en el sistema decimal que hoy usamos. En el siglo trece, Leonardo de Pisa, conocido como Fibonacci, lo introdujo en Europa con su libro Liber Abaci. La recepción fue hostil. Varias ciudades italianas prohibieron las cifras arábigas en los libros de contabilidad, con el argumento de que un cero podía convertirse en un nueve con un simple trazo de pluma, mientras que los números romanos resultaban más difíciles de falsificar. La resistencia duró casi tres siglos.
+El camión de la basura pasa los lunes y los jueves, pero no siempre a la misma hora. Si lo deja afuera desde temprano, los perros abren las bolsas. Conviene esperar a escuchar la campana.
 
-Hoy el cero sostiene el álgebra, el cálculo y la lógica binaria de cualquier computadora, donde toda la información se reduce a presencia o ausencia de señal.`,
+El agua se va casi todos los meses, casi siempre un martes. Dura entre seis y ocho horas. Le recomiendo tener dos garrafones llenos.
+
+La señal del teléfono es mala del lado del patio. Del lado de la calle funciona bien. No es su aparato, es la loma.
+
+En la esquina hay un taller que empieza a martillar a las siete. Yo dejé de pelear con eso hace años. Usted decida.
+
+Por último, si escucha ruido en el techo por la noche, no se preocupe. Son las ardillas. Bajan por el cable de la luz y se meten entre las tejas. No hacen daño, solo escándalo.
+
+Cualquier cosa, toque la puerta. Casi siempre estoy.
+
+Atentamente, Delia, de la casa del limonero.`,
 quiz:[
-{q:"¿Para qué necesitaron el cero los escribas babilonios?",options:["Para calcular intereses","Para marcar una posición vacía en su sistema de base sesenta","Para representar deudas","Para dividir cantidades"],answer:1,type:"Detalle",why:"Lo usaron como marca de hueco donde una posición queda vacía."},
-{q:"¿En qué se equivocó Brahmagupta?",options:["En la regla de la suma con cero","Al intentar dividir entre cero","Al confundir el cero con el uno","Al negar que el cero fuera un número"],answer:1,type:"Detalle",why:"Su intento de dividir entre cero quedó sin resolver."},
-{q:"¿Por qué algunas ciudades italianas prohibieron las cifras arábigas?",options:["Porque venían del mundo islámico","Porque un cero podía alterarse y volverse un nueve","Porque los contadores no sabían leerlas","Porque la Iglesia las consideró paganas"],answer:1,type:"Causa",why:"El argumento era la facilidad de falsificarlas con un trazo de pluma."},
-{q:"¿Qué distingue el cero babilonio del cero indio?",options:["El babilonio era separador; el indio, un número con reglas propias","El babilonio era decimal; el indio, sexagesimal","El babilonio se escribía con punto; el indio, con círculo","No hay diferencia conceptual"],answer:0,type:"Inferencia",why:"El babilonio era puntuación aritmética; con Brahmagupta el cero pasa a operar como cantidad."},
-{q:"¿Cuál es la tesis del texto?",options:["Que los números romanos eran más seguros","Que el cero se inventó por casualidad varias veces","Que representar la nada fue un salto difícil que hoy sostiene toda la técnica","Que Fibonacci inventó el sistema decimal"],answer:2,type:"Idea principal",why:"Sigue una idea resistida hasta volverse cimiento del álgebra y la lógica binaria."}]},
+{q:"¿Qué días pasa el camión de la basura?",options:["Lunes y jueves","Martes y viernes","Solo los lunes","Todos los días"],answer:0,type:"Dato",why:"Pasa los lunes y los jueves, sin hora fija."},
+{q:"¿Por qué recomienda esperar la campana?",options:["Porque el camión no siempre pasa","Porque los perros abren las bolsas si las deja antes","Porque hay multa","Porque el camión no se detiene"],answer:1,type:"Causa",why:"Si deja la basura desde temprano, los perros la abren."},
+{q:"¿A qué atribuye Delia la mala señal del teléfono?",options:["Al aparato","A la loma","Al taller de la esquina","A los cables"],answer:1,type:"Detalle",why:"Dice que no es el aparato, es la loma."},
+{q:"¿Qué provoca el ruido en el techo?",options:["El viento","Las ardillas","Los vecinos","El taller"],answer:1,type:"Detalle",why:"Son ardillas que bajan por el cable de la luz."}]},
 
-{id:"entropia",titulo:"Por qué el desorden siempre gana",cat:["Expositivo","Ciencia"],nivel:"Difícil",
-texto:`La segunda ley de la termodinámica suele enunciarse diciendo que el desorden de un sistema aislado siempre aumenta. La formulación es cómoda pero engañosa, porque desorden es una palabra estética y la entropía no lo es. La entropía cuenta configuraciones.
+{id:"calabaza",titulo:"El concurso de la calabaza",cat:["Relato"],nivel:"N3",
+texto:`El pueblo de Sarel organiza cada otoño un concurso de calabazas que en los últimos años había dejado de resultar interesante. Rufo Bermejo ganaba siempre con ejemplares tan grandes que hacían falta dos hombres para subirlos a la báscula.
 
-Imagina una baraja ordenada por palo y número. Existe una sola manera de que quede así. Existen, en cambio, unas ochenta unvigintillones de maneras de que quede revuelta, un número con sesenta y ocho cifras. Al barajar no ocurre nada que empuje hacia el desorden: simplemente hay incomparablemente más estados desordenados que ordenados, y el azar visita los que abundan. Eso es la entropía, una medida de en cuántos arreglos microscópicos distintos puede presentarse el mismo estado macroscópico.
+Aquel año se inscribió una participante nueva, una mujer llamada Inés que había llegado al pueblo apenas en primavera. Casi nadie la conocía todavía y nadie la consideraba una amenaza.
 
-De ahí se sigue algo profundo. Las leyes fundamentales de la física son reversibles: si filmas dos moléculas chocando y proyectas la película al revés, nada parece violado. Pero si filmas una taza cayendo y reproduces la escena en reversa, el absurdo es inmediato. La diferencia no está en las leyes, sino en el conteo. Existe un número gigantesco de maneras de que los fragmentos se dispersen y solo unas pocas de que se reúnan en forma de taza. La flecha del tiempo, esa dirección única que percibimos, es una consecuencia estadística.
+El día del concurso apareció con una calabaza mediana, ni grande ni pequeña, de un color naranja bastante común. Varios vecinos se rieron por lo bajo cuando la colocó junto a las de Rufo.
 
-La ley no prohíbe crear orden local. Un refrigerador enfría su interior, un organismo construye tejido, una ciudad se levanta. Todos ordenan una región del mundo, pero pagan el orden con calor y desecho vertidos afuera, y el balance total siempre aumenta. La vida no es una excepción a la segunda ley: es una manera muy eficaz de cumplirla.`,
+El reglamento del certamen llevaba veinte años sin leerse en voz alta y premiaba la calabaza de mayor peso. Esa distinción entre peso y volumen nunca había tenido la menor importancia hasta esa mañana.
+
+La calabaza de Inés alcanzó cuarenta y un kilos, mientras que la mayor de Rufo se quedó en treinta y siete.
+
+Rufo pidió que revisaran la báscula y la revisaron dos veces, pero el resultado no cambió en ninguna medición.
+
+Terminado el concurso, Inés explicó que había regado muy poco su planta durante las últimas tres semanas. Con menos agua la calabaza crecía menos por fuera, aunque la pulpa quedaba considerablemente más densa.
+
+Rufo escuchó la explicación completa sin decir una palabra. Al año siguiente volvió a inscribirse con una calabaza mediana.`,
 quiz:[
-{q:"Según el texto, ¿qué mide realmente la entropía?",options:["El grado estético de desorden","La cantidad de arreglos microscópicos compatibles con un estado macroscópico","La temperatura de un sistema","La energía total disponible"],answer:1,type:"Vocabulario",why:"La entropía cuenta configuraciones, no desorden en sentido estético."},
-{q:"¿Por qué una baraja se desordena al barajarla?",options:["Porque una fuerza empuja hacia el desorden","Porque hay muchísimos más estados desordenados que ordenados","Porque las cartas se desgastan","Porque el orden inicial era inestable"],answer:1,type:"Causa",why:"El azar visita los estados que abundan; no hay fuerza hacia el desorden."},
-{q:"¿Por qué la película de una taza rompiéndose parece absurda al revés?",options:["Porque las leyes físicas prohíben ese proceso","Porque hay pocas maneras de que los fragmentos se reúnan y muchísimas de que se dispersen","Porque la gravedad no es reversible","Porque la taza pierde masa al romperse"],answer:1,type:"Inferencia",why:"La diferencia está en el conteo de configuraciones, no en las leyes."},
-{q:"¿Qué dice el texto sobre el orden local?",options:["Es imposible según la segunda ley","Es posible, pero se paga con calor y desecho vertidos afuera","Solo ocurre en organismos vivos","Reduce la entropía total del universo"],answer:1,type:"Detalle",why:"Se puede ordenar una región, pero el balance total siempre aumenta."},
-{q:"¿Qué afirma el texto sobre la vida y la segunda ley?",options:["Que la vida es una excepción a la ley","Que la vida es una forma muy eficaz de cumplirla","Que la vida detiene el aumento de entropía","Que la vida no intercambia calor con el entorno"],answer:1,type:"Idea principal",why:"Cierra diciendo que la vida no es excepción sino una manera eficaz de cumplir la ley."}]},
+{q:"¿Qué premiaba realmente el reglamento?",options:["El mayor tamaño","El mayor peso","El mejor color","La más antigua"],answer:1,type:"Detalle",why:"El reglamento premiaba el peso, no el volumen."},
+{q:"¿Cuánto pesó la calabaza de Inés?",options:["Treinta y siete kilos","Cuarenta y un kilos","Cincuenta kilos","No se dice"],answer:1,type:"Dato",why:"Pesó cuarenta y un kilos frente a los treinta y siete de Rufo."},
+{q:"¿Qué hizo Inés para lograrlo?",options:["Usó una semilla especial","Regó poco durante las últimas semanas","Cosechó más tarde","Cambió la tierra"],answer:1,type:"Causa",why:"Con menos agua la pulpa quedó más densa."},
+{q:"¿Qué sugiere el final sobre Rufo?",options:["Que abandonó el concurso","Que aceptó la lección y cambió su método","Que impugnó el resultado","Que se mudó del pueblo"],answer:1,type:"Inferencia",why:"Al año siguiente se inscribió con una calabaza mediana."}]},
 
-{id:"interes",titulo:"El interés compuesto y la regla del 72",cat:["Expositivo","Práctico"],nivel:"Medio",
-texto:`La diferencia entre interés simple y compuesto parece un detalle contable y termina siendo la diferencia entre una deuda manejable y una impagable. En el interés simple, el rendimiento se calcula siempre sobre el capital inicial. En el compuesto, se calcula sobre el capital más los intereses ya acumulados, de modo que cada periodo el monto sobre el que se cobra es mayor.
+{id:"puertas",titulo:"La casa de las tres puertas",cat:["Descripción"],nivel:"N2",
+texto:`La casa que está al final del camino de tierra tiene tres puertas en la fachada, algo bastante raro en una construcción de una sola planta y apenas cuatro habitaciones.
 
-Un ejemplo aclara la escala. Cien mil pesos al diez por ciento anual simple producen diez mil pesos cada año: en treinta años, trescientos mil de intereses. Los mismos cien mil al diez por ciento compuesto se convierten en más de un millón setecientos mil. La diferencia no viene de la tasa sino del tiempo, porque el crecimiento es exponencial y no lineal.
+La primera, la de la izquierda, es la que todos utilizan y da directamente a la cocina. Tiene un escalón de piedra gastado en el centro por el paso de muchos años.
 
-Existe un atajo mental para estimarlo sin calculadora: la regla del 72. Si divides 72 entre la tasa anual, obtienes aproximadamente los años que tarda el dinero en duplicarse. Al seis por ciento, doce años. Al nueve por ciento, ocho años. Al doce por ciento, seis años. La aproximación es buena para tasas entre el uno y el veinte por ciento.
+La segunda, la del medio, resulta más ancha y está pintada de azul intenso. Permanece cerrada con una tranca de madera colocada por dentro y los dueños actuales jamás la han abierto.
 
-La misma regla funciona en dirección contraria y ahí aparece la advertencia. Una tarjeta de crédito que cobra treinta y seis por ciento anual duplica la deuda en unos dos años si no se abona nada. Una inflación del seis por ciento anual reduce a la mitad el poder de compra del dinero guardado bajo el colchón en doce años.
+La tercera es angosta y bastante baja, de manera que cualquier adulto debe agachar la cabeza para pasar. Conduce a un cuarto pequeño y sin ventanas que ahora utilizan para guardar herramienta.
 
-De ahí se derivan dos consecuencias prácticas. La primera es que el tiempo pesa más que el monto: empezar temprano con poco vence a empezar tarde con mucho. La segunda es que conviene revisar siempre la tasa efectiva anual, no la mensual, porque la mensual disfraza el efecto acumulado y hace parecer moderado lo que no lo es.`,
+Quien construyó la casa fue un hombre que transportaba mercancía en carreta por toda la región. La puerta ancha del centro permitía meter la carga sin rodear el edificio, y la angosta comunicaba con el cuarto donde dormía su ayudante.
+
+Cuando la carreta dejó de utilizarse, la puerta del medio perdió por completo su función original. Nadie llegó a tapiarla; simplemente dejaron de abrirla.
+
+Los nuevos dueños han considerado varias veces quitarla y colocar una ventana en su lugar. Siempre terminan posponiendo la obra, en parte por el costo y en parte porque la fachada, con sus tres puertas desiguales, es lo único que distingue esa casa de todas las demás del camino.`,
 quiz:[
-{q:"¿Cuál es la diferencia entre interés simple y compuesto?",options:["El simple se cobra mensual y el compuesto anual","El compuesto se calcula sobre el capital más los intereses acumulados","El simple aplica solo a deudas","El compuesto usa una tasa más baja"],answer:1,type:"Vocabulario",why:"En el compuesto la base de cálculo crece cada periodo."},
-{q:"Según la regla del 72, ¿en cuántos años se duplica el dinero al nueve por ciento?",options:["Seis","Ocho","Doce","Dieciocho"],answer:1,type:"Dato",why:"72 dividido entre 9 da 8 años."},
-{q:"¿Qué ocurre con una deuda al treinta y seis por ciento anual si no se abona nada?",options:["Se duplica en unos dos años","Se duplica en seis años","Crece de forma lineal","Se congela hasta el siguiente corte"],answer:0,type:"Aplicación",why:"72 entre 36 da 2: la deuda se duplica en unos dos años."},
-{q:"¿Por qué conviene mirar la tasa efectiva anual y no la mensual?",options:["Porque la mensual es ilegal","Porque la mensual disfraza el efecto acumulado","Porque la anual siempre es menor","Porque los bancos no publican la mensual"],answer:1,type:"Inferencia",why:"La tasa mensual hace parecer moderado lo que acumulado no lo es."},
-{q:"¿Cuál es la conclusión práctica principal?",options:["Que el monto inicial es lo decisivo","Que el tiempo pesa más que el monto","Que conviene evitar cualquier inversión","Que la inflación no afecta al ahorro"],answer:1,type:"Idea principal",why:"Empezar temprano con poco vence a empezar tarde con mucho."}]},
+{q:"¿Cuál de las tres puertas se usa?",options:["La del medio","La de la izquierda","La angosta","Las tres"],answer:1,type:"Detalle",why:"La de la izquierda da a la cocina y es la que todos usan."},
+{q:"¿Para qué servía originalmente la puerta ancha del centro?",options:["Para recibir visitas","Para meter la carga de la carreta","Para ventilar la casa","Para el ganado"],answer:1,type:"Causa",why:"Permitía meter la mercancía sin rodear el edificio."},
+{q:"¿Qué hay detrás de la puerta angosta hoy?",options:["Un cuarto con herramientas","La cocina","Un pasillo","Un patio"],answer:0,type:"Detalle",why:"Conduce a un cuarto sin ventanas que usan para guardar herramientas."},
+{q:"¿Por qué no han quitado la puerta del medio?",options:["Porque está protegida por la ley","Por el costo y porque distingue a la casa","Porque no se puede abrir","Porque los vecinos se oponen"],answer:1,type:"Inferencia",why:"Pesan el gasto y el hecho de que la fachada es lo único que la distingue."}]},
 
-{id:"aumento",titulo:"Cómo se prepara una negociación salarial",cat:["Práctico"],nivel:"Fácil",
-texto:`Pedir un aumento se decide antes de entrar a la oficina. Quien improvisa entra a una conversación sobre sus necesidades personales, que es el peor terreno posible, porque el interlocutor no tiene incentivos para resolverlas. Quien prepara entra a una conversación sobre valor entregado, y ahí sí hay algo que negociar.
+{id:"turno",titulo:"El turno de la noche",cat:["Relato"],nivel:"N3",
+texto:`Marcela empezó a trabajar de noche en el estacionamiento de un hospital cuando ya llevaba medio año buscando empleo sin ningún resultado. El puesto consistía en cobrar los boletos, levantar la pluma y anotar en una libreta cualquier situación que pareciera fuera de lo común.
 
-El primer paso es reunir evidencia. No basta con haber trabajado bien: hay que poder mostrar resultados con números, fechas y comparaciones. Cuánto se redujo un tiempo de proceso, cuánto creció una cuenta, qué problema dejó de aparecer desde que alguien se hizo cargo. Un buen expediente cubre los últimos doce meses.
+Durante las primeras semanas anotó bastante poco. Un coche con la alarma sonando, una motocicleta que entró sin boleto y una discusión breve entre dos hombres que se marcharon enseguida.
 
-El segundo paso es conocer el mercado. Sin un rango de referencia externo se negocia a ciegas. Portales de sueldos, colegas del mismo sector y reclutadores dan un intervalo razonable para el puesto, la ciudad y los años de experiencia.
+Con el tiempo aprendió a distinguir los ritmos particulares de la noche. Entre las once y la una entraban familiares apresurados, de dos a cuatro no ocurría prácticamente nada, y a partir de las cinco comenzaban a llegar los del turno de la mañana.
 
-El tercero es el anclaje. En una negociación, la primera cifra mencionada condiciona todo el rango posterior, incluso cuando ambas partes saben que es alta. Por eso conviene proponer un número concreto y algo por encima del objetivo, sostenido por la evidencia, en lugar de responder con un rango vago o de devolver la pregunta.
+Lo que más la sorprendió fue la cantidad de personas que se quedaban dentro del coche sin bajarse. Estacionaban, apagaban el motor y permanecían inmóviles veinte o treinta minutos antes de entrar al hospital.
 
-El cuarto es la alternativa. La fuerza en cualquier negociación no viene del argumento sino de lo que ocurre si no hay acuerdo. Quien tiene otra oferta, o al menos un mercado activo, negocia distinto. Esa alternativa no se usa como amenaza; se nota en la calma.
+Marcela comprendió muy pronto que ese rato no era pereza sino preparación. Adentro los esperaba una conversación difícil y necesitaban un momento para acomodarse por dentro antes de enfrentarla.
 
-Y queda el momento. Un aumento se pide cuando hay un logro reciente y cuando el presupuesto del área aún no está cerrado. Pedirlo dos semanas después de aprobado el presupuesto anual convierte un sí en un tal vez el año próximo.`,
+Desde entonces dejó de golpear el vidrio para apurarlos, aunque el reglamento indicaba con claridad que debía hacerlo si alguien permanecía más de quince minutos dentro del vehículo.
+
+En la libreta empezó a anotar únicamente lo que de verdad le parecía importante.`,
 quiz:[
-{q:"¿Por qué es mala idea hablar de necesidades personales?",options:["Porque es información confidencial","Porque el interlocutor no tiene incentivos para resolverlas","Porque los sueldos se fijan por ley","Porque genera envidia entre colegas"],answer:1,type:"Causa",why:"La conversación útil es sobre valor entregado, no sobre necesidades del empleado."},
-{q:"¿Qué periodo debe cubrir un buen expediente de logros?",options:["Los últimos tres meses","Los últimos doce meses","Toda la carrera","Desde el último aumento sin importar cuándo fue"],answer:1,type:"Dato",why:"El texto recomienda cubrir los últimos doce meses."},
-{q:"¿Qué es el anclaje en una negociación?",options:["Comprometerse a permanecer en la empresa","El efecto de la primera cifra mencionada sobre todo el rango posterior","Fijar un mínimo irrenunciable","Aceptar la primera oferta recibida"],answer:1,type:"Vocabulario",why:"La primera cifra condiciona el rango posterior aunque se sepa que es alta."},
-{q:"Según el texto, ¿de dónde viene la fuerza real en una negociación?",options:["De la antigüedad en el puesto","De la calidad de los argumentos","De lo que ocurre si no hay acuerdo","De la relación personal con el jefe"],answer:2,type:"Inferencia",why:"La alternativa disponible da la posición; se nota en la calma, no como amenaza."},
-{q:"¿Cuál es el peor momento para pedir un aumento?",options:["Justo después de un logro visible","Antes de que se cierre el presupuesto del área","Dos semanas después de aprobado el presupuesto anual","Durante la evaluación de desempeño"],answer:2,type:"Aplicación",why:"Con el presupuesto ya cerrado, el sí se convierte en un tal vez el año próximo."}]},
+{q:"¿En qué consistía el trabajo de Marcela?",options:["Vigilar el hospital","Cobrar boletos, levantar la pluma y anotar lo inusual","Limpiar el estacionamiento","Atender la recepción"],answer:1,type:"Detalle",why:"Cobraba boletos, levantaba la pluma y anotaba lo fuera de lo común."},
+{q:"¿En qué horario casi no pasaba nada?",options:["De once a una","De dos a cuatro","A partir de las cinco","Toda la noche"],answer:1,type:"Dato",why:"De dos a cuatro casi no pasaba nada."},
+{q:"¿Por qué la gente se quedaba dentro del coche?",options:["Por pereza","Para prepararse antes de una conversación difícil","Para escuchar la radio","Porque no encontraban la entrada"],answer:1,type:"Inferencia",why:"Marcela entiende que era preparación, no pereza."},
+{q:"¿Qué decidió hacer Marcela con el reglamento?",options:["Cumplirlo al pie de la letra","Dejar de apurar a la gente aunque el reglamento lo pidiera","Renunciar","Pedir que lo cambiaran"],answer:1,type:"Detalle",why:"Dejó de tocar el vidrio pese a lo que indicaba el reglamento."}]},
 
-{id:"sesgo",titulo:"El sesgo de confirmación",cat:["Práctico","Ciencia"],nivel:"Medio",
-texto:`En 1960 el psicólogo Peter Wason hizo un experimento sencillo. Presentó a sus voluntarios la serie de números dos, cuatro, seis y les dijo que obedecía a una regla que debían descubrir. Podían proponer nuevas series y él respondería si cumplían la regla o no.
+{id:"belmar",titulo:"La mudanza de los Belmar",cat:["Relato"],nivel:"N4",
+texto:`La mudanza de la familia Belmar debía resolverse en una sola jornada de trabajo, pero terminó extendiéndose a lo largo de tres días completos. Ninguno de los involucrados había previsto la sucesión de contratiempos que apareció desde la primera hora.
 
-Casi todos formularon una hipótesis inmediata: números pares que aumentan de dos en dos. Y a partir de ahí propusieron ocho, diez, doce; luego veinte, veintidós, veinticuatro. Cada respuesta afirmativa reforzaba su confianza. Cuando anunciaban la solución, se equivocaban. La regla era mucho más amplia: cualquier serie creciente.
+El primer inconveniente surgió temprano, cuando los cargadores descubrieron que el ropero del cuarto principal no cabía por la puerta ni siquiera desarmado. Lo había construido dentro de la habitación un carpintero que llevaba años muerto, y las uniones estaban selladas con una cola endurecida que ya resultaba indistinguible de la madera.
 
-El error no estuvo en la hipótesis inicial, que era razonable, sino en la estrategia de comprobación. Los participantes solo propusieron series que su regla predecía como correctas. Nadie intentó, por ejemplo, uno, dos, tres, una prueba que habría refutado la hipótesis en un segundo. Buscaban confirmación, no refutación.
+La discusión que siguió se sostuvo en el pasillo entre el jefe de la cuadrilla y la señora Belmar. Giraba alrededor de una pregunta que ninguno de los dos supo responder: si convenía romper el mueble o romper el marco de la puerta, considerando que la casa quedaría en manos del comprador apenas terminara la semana.
 
-Ese mecanismo tiene nombre: sesgo de confirmación. Consiste en buscar, recordar e interpretar la información de manera que respalde lo que ya creemos. No es un defecto de las personas poco inteligentes; los estudios muestran que quienes tienen más conocimiento del tema suelen ser más hábiles para construir defensas de su postura inicial.
+Optaron finalmente por dejar el ropero donde estaba. La señora Belmar comunicó la decisión con una llamada breve y algo avergonzada, y el comprador la recibió con un entusiasmo inesperado, porque llevaba semanas preguntándose cómo resolvería el almacenamiento de esa habitación.
 
-Hay maneras de contrarrestarlo, aunque ninguna es cómoda. La primera es formular explícitamente qué evidencia te haría cambiar de opinión, antes de buscar datos. Si no existe ninguna, no estás sosteniendo una hipótesis sino una creencia. La segunda es escribir las predicciones con fecha y revisarlas después, porque la memoria reescribe silenciosamente lo que creíamos. La tercera es exponerse al mejor argumento del otro lado, no al peor, que es la tentación habitual.`,
+Los dos días adicionales se consumieron entre la lluvia del martes, que obligó a detener la carga durante la tarde entera, y el hallazgo de una caja con documentos antiguos que la señora Belmar se negó a subir al camión sin revisarla hoja por hoja.`,
 quiz:[
-{q:"¿Cuál era la regla verdadera en el experimento de Wason?",options:["Números pares que crecen de dos en dos","Cualquier serie creciente","Múltiplos de dos","Series que empiezan en dos"],answer:1,type:"Detalle",why:"La regla era mucho más amplia: cualquier serie creciente."},
-{q:"¿Cuál fue el error de estrategia de los participantes?",options:["Formular una hipótesis demasiado pronto","Proponer solo series que su hipótesis predecía como correctas","No proponer suficientes series","Confiar en la memoria"],answer:1,type:"Causa",why:"Buscaban confirmación en vez de intentar refutar su propia regla."},
-{q:"¿Qué dice el texto sobre quienes saben más del tema?",options:["Son inmunes al sesgo","Suelen ser más hábiles para defender su postura inicial","Cambian de opinión con más facilidad","Cometen menos errores de memoria"],answer:1,type:"Inferencia",why:"Más conocimiento da más recursos para construir defensas de la postura previa."},
-{q:"Según el texto, ¿qué distingue una hipótesis de una creencia?",options:["La cantidad de datos que la apoyan","Que exista evidencia capaz de hacerte cambiar de opinión","Que esté escrita con fecha","Que la comparta un experto"],answer:1,type:"Vocabulario",why:"Si ninguna evidencia te haría cambiar de opinión, no es hipótesis sino creencia."},
-{q:"¿Por qué recomienda escribir predicciones con fecha?",options:["Para compartirlas con colegas","Porque la memoria reescribe lo que creíamos","Para calcular porcentajes de acierto","Porque lo exige el método científico"],answer:1,type:"Detalle",why:"La memoria reescribe silenciosamente nuestras creencias previas."}]},
+{q:"¿Cuánto duró finalmente la mudanza?",options:["Una jornada","Dos días","Tres días completos","Una semana"],answer:2,type:"Dato",why:"Se extendió a lo largo de tres días completos."},
+{q:"¿Por qué no pudieron sacar el ropero?",options:["Pesaba demasiado","Fue construido dentro del cuarto y sus uniones estaban selladas","No cabía en el camión","Estaba clavado al piso"],answer:1,type:"Causa",why:"Lo construyó un carpintero dentro de la habitación y la cola endurecida impedía desarmarlo."},
+{q:"¿Cómo reaccionó el comprador al enterarse?",options:["Con molestia","Con entusiasmo inesperado","Pidiendo un descuento","No contestó"],answer:1,type:"Detalle",why:"Llevaba semanas preguntándose cómo resolver el almacenamiento de esa habitación."},
+{q:"¿Qué dos cosas consumieron los días adicionales?",options:["La lluvia y una caja de documentos","El ropero y la lluvia","Una avería del camión y la lluvia","Un retraso de los cargadores"],answer:0,type:"Detalle",why:"La lluvia del martes y la revisión de la caja con documentos antiguos."}]},
 
-{id:"oxidacion",titulo:"Por qué se oxida el hierro",cat:["Ciencia","Práctico"],nivel:"Medio",
-texto:`La herrumbre no es suciedad acumulada sobre el metal: es el metal transformado. El hierro expuesto al oxígeno y al agua se convierte en óxido de hierro hidratado, un compuesto poroso y voluminoso que ocupa más espacio que el metal original. Por eso la herrumbre se hincha, se descascara y deja al descubierto material nuevo que vuelve a atacarse. El proceso no se detiene solo.
+{id:"faro",titulo:"El inventario del faro",cat:["Descripción"],nivel:"N4",
+texto:`El inventario que se levantó tras el cierre definitivo del faro de Punta Ríspida resulta mucho más revelador que cualquiera de los informes oficiales que lo acompañaron. Basta con detenerse a leerlo con alguna atención.
 
-El mecanismo es electroquímico y necesita tres ingredientes: hierro, oxígeno y un electrolito, que casi siempre es agua con sales disueltas. En la superficie del metal se forman zonas anódicas, donde el hierro cede electrones y pasa a la solución, y zonas catódicas, donde el oxígeno los recibe. La corriente circula por el propio metal y el circuito se cierra a través del agua. Sin humedad no hay electrolito y la corrosión prácticamente se detiene, razón por la que las herramientas se conservan intactas en climas secos y se pican en dos semanas junto al mar.
+Además del equipo previsible, que incluía lámparas de repuesto, bidones de combustible, herramienta de mantenimiento y tres juegos completos de lentes, la lista consigna una cantidad notable de objetos personales. Ningún reglamento los contemplaba y sin embargo permanecieron allí durante décadas sin que nadie los reclamara.
 
-La sal explica lo del mar. Los iones disueltos aumentan la conductividad del electrolito y aceleran el intercambio; por eso el salitre de la carretera en invierno destruye carrocerías más rápido que la lluvia.
+Figuran, por ejemplo, cuarenta y dos libros de temas diversos, la mayoría con anotaciones al margen escritas por manos claramente distintas. Eso sugiere que los sucesivos ocupantes del faro leyeron los mismos ejemplares y se respondieron unos a otros a lo largo de los años sin haberse conocido jamás.
 
-No todos los metales se comportan así. El aluminio es más reactivo que el hierro, pero al oxidarse forma una capa de óxido compacta y adherente que sella la superficie y detiene el avance. A eso se le llama pasivación. El acero inoxidable imita el truco: contiene al menos un diez con cinco por ciento de cromo, que genera una película invisible de óxido de cromo capaz de regenerarse cuando se raya.
+Aparece también un juego de ajedrez incompleto, al que faltan dos peones y una torre. Alguien los sustituyó por un dedal, un tapón de corcho y un carrete de hilo.
 
-Las defensas prácticas se derivan del mecanismo. Pintar o engrasar aísla del agua. Galvanizar recubre con zinc, que se corroe antes que el hierro y lo protege aunque la capa se raye. Y en cascos de barcos y tanques se sueldan bloques de zinc o magnesio llamados ánodos de sacrificio, que se consumen para que el acero no lo haga.`,
+Hay además una libreta de tapas duras que no contiene notas de trabajo, sino la relación minuciosa de los barcos avistados cada noche. Esa práctica dejó de ser obligatoria en algún momento y alguien la continuó por decisión propia durante once años más.
+
+El funcionario que redactó el inventario incluyó al final una observación ajena por completo al formato administrativo. Señalaba que ninguna de esas cosas tenía valor comercial y recomendaba, pese a ello, no desecharlas.`,
 quiz:[
-{q:"¿Por qué la herrumbre no protege al metal como sí lo hace el óxido de aluminio?",options:["Porque es más dura","Porque es porosa y voluminosa, se descascara y expone material nuevo","Porque conduce electricidad","Porque se disuelve en agua"],answer:1,type:"Causa",why:"El óxido de hierro se hincha y se desprende; el de aluminio sella la superficie."},
-{q:"¿Qué tres ingredientes requiere la corrosión del hierro?",options:["Hierro, calor y luz","Hierro, oxígeno y un electrolito","Hierro, sal y presión","Hierro, oxígeno y cromo"],answer:1,type:"Detalle",why:"Hierro, oxígeno y un electrolito, casi siempre agua con sales."},
-{q:"¿Por qué la sal acelera la corrosión?",options:["Porque reacciona directamente con el hierro","Porque aumenta la conductividad del electrolito","Porque absorbe el oxígeno del aire","Porque eleva la temperatura del metal"],answer:1,type:"Detalle",why:"Los iones disueltos aumentan la conductividad y aceleran el intercambio."},
-{q:"¿Qué porcentaje mínimo de cromo caracteriza al acero inoxidable?",options:["Dos por ciento","Cinco por ciento","Diez con cinco por ciento","Veinticinco por ciento"],answer:2,type:"Dato",why:"El texto menciona al menos diez con cinco por ciento de cromo."},
-{q:"¿Cómo funciona un ánodo de sacrificio?",options:["Aísla el metal del agua con una capa impermeable","Es un metal que se corroe en lugar del acero","Neutraliza la sal del agua de mar","Regenera la capa de óxido de cromo"],answer:1,type:"Aplicación",why:"Bloques de zinc o magnesio se consumen para que el acero no lo haga."}]},
+{q:"¿Qué sugieren las anotaciones al margen de los libros?",options:["Que pertenecían a un solo dueño","Que ocupantes sucesivos se respondían sin conocerse","Que eran libros escolares","Que estaban prohibidos"],answer:1,type:"Inferencia",why:"Las manos distintas indican un diálogo entre ocupantes que nunca coincidieron."},
+{q:"¿Con qué sustituyeron las piezas faltantes del ajedrez?",options:["Con monedas","Con un dedal, un corcho y un carrete de hilo","Con piedras","No las sustituyeron"],answer:1,type:"Detalle",why:"Faltaban dos peones y una torre, reemplazados por esos tres objetos."},
+{q:"¿Qué contenía la libreta de tapas duras?",options:["Notas de mantenimiento","El registro de barcos avistados cada noche","Cartas personales","Un diario de clima"],answer:1,type:"Detalle",why:"Registraba los barcos avistados, práctica ya no obligatoria."},
+{q:"¿Qué recomendó el funcionario al final?",options:["Vender todo","No desechar los objetos pese a carecer de valor comercial","Trasladar el faro","Destruir la libreta"],answer:1,type:"Idea principal",why:"Señaló que no valían nada y aun así pidió conservarlos."}]},
 
-{id:"refri",titulo:"Un refrigerador no produce frío",cat:["Ciencia","Práctico"],nivel:"Medio",
-texto:`Conviene empezar por corregir la intuición: el frío no existe como sustancia. No hay partículas de frío que puedan fabricarse e inyectarse en una caja. Solo existe el calor, y enfriar algo significa sacarle calor y llevarlo a otra parte. Un refrigerador es, literalmente, una bomba de calor que traslada energía del interior hacia la cocina.
+{id:"cocina",titulo:"Una discusión en la cocina",cat:["Escena"],nivel:"N3",
+texto:`La discusión que sostuvieron aquella noche en la cocina comenzó por un asunto tan menor que ninguno de los dos habría podido reconstruirlo con precisión al día siguiente. Ambos la recordarían después con versiones bastante distintas.
 
-El transporte lo hace un fluido llamado refrigerante, que recorre un circuito cerrado y cambia de estado en el camino. Todo se apoya en un hecho físico: un líquido que se evapora absorbe calor de su entorno, y un gas que se condensa lo libera.
+Según ella, todo empezó cuando él comentó, mientras servía el agua, que la reunión del sábado podía cancelarse sin mayor problema. Según él, la conversación venía tensa desde que ella entró sin saludar y dejó las llaves sobre la mesa con más fuerza de la necesaria.
 
-El ciclo tiene cuatro estaciones. En el evaporador, dentro del gabinete, el refrigerante llega frío y a baja presión, hierve al absorber el calor de los alimentos y sale convertido en gas. El compresor, ese motor que se enciende y apaga con un zumbido, lo comprime y con ello eleva su presión y su temperatura por encima de la del aire de la cocina. En el condensador, la rejilla o serpentín de la parte trasera, el gas caliente entrega ese calor al ambiente y vuelve a ser líquido. Por último, una válvula de expansión deja pasar el líquido a un espacio de baja presión, donde se enfría bruscamente, y el ciclo recomienza.
+Los dos coincidieron, con notable exactitud, en el momento exacto del quiebre. La discusión dejó de tratar sobre la reunión y pasó a tratar sobre todas las veces anteriores en que uno había decidido algo por los dos.
 
-De aquí se siguen tres consecuencias comprobables. La parte trasera está caliente porque ahí se descarga el calor extraído del interior. Un refrigerador con la puerta abierta calienta la cocina en vez de enfriarla, porque además del calor que mueve añade el que genera su propio motor. Y si el condensador está pegado a la pared o cubierto de polvo, no puede entregar calor al aire, el compresor trabaja más tiempo y el consumo eléctrico sube sin que el interior enfríe mejor.`,
+Ambos identificaron ese momento con la misma frase, siempre haces lo mismo, pronunciada por ella. Él sostiene, sin embargo, que fue él quien la dijo primero.
+
+A partir de ahí el intercambio siguió un recorrido perfectamente conocido, con reproches sobre asuntos de hacía años y silencios calculados para producir efecto. Hubo también una salida de la habitación que no llegó a completarse, porque el agua seguía hirviendo en la estufa.
+
+Fue precisamente ese detalle doméstico, la necesidad de apagar el fuego antes de marcharse, lo que interrumpió el impulso. Los dejó a los dos parados en el mismo espacio reducido, sin argumentos nuevos y con la sensación incómoda de haber exagerado.`,
 quiz:[
-{q:"¿Qué hace en realidad un refrigerador?",options:["Produce frío mediante electricidad","Traslada calor del interior hacia el exterior","Elimina el calor convirtiéndolo en electricidad","Congela el aire del interior"],answer:1,type:"Idea principal",why:"Es una bomba de calor: saca calor de dentro y lo entrega afuera."},
-{q:"¿Qué ocurre en el evaporador?",options:["El gas se condensa y libera calor","El líquido hierve y absorbe calor del interior","El refrigerante se comprime","La presión baja de golpe"],answer:1,type:"Detalle",why:"El refrigerante hierve absorbiendo calor de los alimentos y sale como gas."},
-{q:"¿Cuál es la función del compresor?",options:["Enfriar el gas antes de entrar al gabinete","Elevar presión y temperatura por encima del aire de la cocina","Filtrar impurezas del refrigerante","Separar el líquido del gas"],answer:1,type:"Detalle",why:"Comprime el gas para que su temperatura supere la del ambiente y pueda ceder calor."},
-{q:"¿Por qué un refrigerador abierto calienta la cocina?",options:["Porque el motor deja de funcionar","Porque mueve el calor de un lado a otro y además añade el que genera su motor","Porque el refrigerante se escapa","Porque el aire frío pesa más"],answer:1,type:"Inferencia",why:"El calor no sale de la cocina y el motor agrega el suyo."},
-{q:"¿Qué pasa si el condensador está cubierto de polvo o pegado a la pared?",options:["El interior enfría más rápido","El compresor trabaja más tiempo y sube el consumo","El refrigerante se congela","Se detiene la válvula de expansión"],answer:1,type:"Aplicación",why:"Sin poder entregar calor al aire, el ciclo pierde eficiencia y el motor trabaja de más."}]},
+{q:"¿Cómo empezó la discusión según él?",options:["Por el comentario sobre la reunión","Porque ella entró sin saludar y azotó las llaves","Por una llamada telefónica","Por la cena"],answer:1,type:"Detalle",why:"Él sostiene que la tensión venía desde que ella entró sin saludar."},
+{q:"¿Qué frase identifican ambos como el punto de quiebre?",options:["«No me estás escuchando»","«Siempre haces lo mismo»","«Haz lo que quieras»","«Ya no importa»"],answer:1,type:"Detalle",why:"Ambos recuerdan esa frase, aunque discrepan sobre quién la dijo primero."},
+{q:"¿Qué impidió que uno saliera de la habitación?",options:["Que el otro lo detuvo","Que el agua seguía hirviendo en la estufa","Que sonó el teléfono","Que la puerta estaba trabada"],answer:1,type:"Causa",why:"Había que apagar el fuego antes de irse."},
+{q:"¿Cómo terminaron los dos?",options:["Reconciliados","Parados en el mismo espacio, sin argumentos y sintiendo que exageraron","En cuartos separados","Riéndose del asunto"],answer:1,type:"Idea principal",why:"El detalle doméstico interrumpió el impulso y los dejó ahí, incómodos."}]},
 
-{id:"crispr",titulo:"CRISPR: un sistema inmune convertido en herramienta",cat:["Ciencia"],nivel:"Difícil",
-texto:`Antes de ser una tecnología, CRISPR era un sistema de defensa bacteriano. En los años ochenta, investigadores japoneses observaron en el genoma de ciertas bacterias secuencias repetidas separadas por fragmentos variables sin función aparente. Décadas después se entendió el mecanismo: esos fragmentos eran trozos de ADN de virus que habían atacado a la bacteria. Era un archivo de agresores, un registro inmunológico heredable.
+{id:"adela",titulo:"El testamento de Adela Roiz",cat:["Descripción"],nivel:"N5",
+texto:`El documento que Adela Roiz hizo redactar tres años antes de su muerte, y que sus herederos discutirían después con una obstinación desproporcionada respecto del valor real de los bienes en disputa, contenía una cláusula tan singular que el notario encargado de la protocolización consideró necesario advertir por escrito que, si bien la disposición resultaba inusual, no contravenía ninguna norma vigente y por tanto debía ejecutarse en sus términos exactos.
 
-Cuando el virus vuelve, la bacteria transcribe ese archivo en pequeñas moléculas de ARN guía. Cada guía se acopla a una proteína cortadora, la más conocida de las cuales es Cas9, y la conduce por la célula hasta encontrar una secuencia de ADN que coincida. Allí la proteína corta las dos hebras y el genoma viral queda inutilizado.
+La cláusula establecía que la casa de la avenida sur, junto con el terreno colindante y los muebles que en ella se encontraran al momento del fallecimiento, pasaría íntegramente a aquel de sus cuatro sobrinos que hubiera acudido a visitarla con mayor frecuencia durante los últimos tres años de su vida, según constara en un cuaderno de registro que ella misma había mantenido y que se hallaba depositado, sellado, en la misma notaría.
 
-La transformación en herramienta ocurrió al advertir que la guía puede reescribirse. Si se diseña un ARN guía sintético con la secuencia que uno elija, Cas9 cortará justo ahí, en cualquier genoma. Eso convirtió una tarea que antes costaba años y presupuestos enormes en un procedimiento accesible para un laboratorio universitario.
+La previsible impugnación llegó apenas tres semanas después del entierro, sostenida sobre el argumento de que un cuaderno llevado unilateralmente por la causante, sin firma ni verificación de terceros, no podía constituir prueba suficiente para determinar una atribución patrimonial de esa magnitud.
 
-Lo que ocurre después del corte importa tanto como el corte mismo. La célula intenta reparar el daño por dos vías. La primera, rápida y descuidada, une los extremos y suele introducir errores que inutilizan el gen: sirve para apagarlo. La segunda, más precisa, copia la información de un molde que el investigador puede suministrar, y permite reescribir la secuencia.
-
-Quedan dos frentes abiertos. El técnico es la edición fuera de blanco: cortes en sitios parecidos al buscado, que pueden tener consecuencias imprevistas. El ético es la línea germinal, es decir, editar embriones y transmitir el cambio a la descendencia, algo que la mayoría de los países prohíbe y que en 2018 provocó una condena internacional tras el caso de las gemelas editadas en China.`,
+El juez que atendió el caso resolvió, tras un procedimiento notablemente largo, que el cuaderno era válido no por su calidad probatoria en sentido estricto, sino porque la testadora había establecido de manera expresa el criterio y el instrumento de verificación, y ninguno de los sobrinos había manifestado objeción alguna mientras ella vivía, pese a que todos conocían la existencia del registro.`,
 quiz:[
-{q:"¿Cuál era la función original de CRISPR en las bacterias?",options:["Reparar mutaciones propias","Un archivo de fragmentos virales usado como defensa inmune","Acelerar la reproducción","Producir antibióticos"],answer:1,type:"Detalle",why:"Guardaba trozos de ADN de virus atacantes como registro inmunológico."},
-{q:"¿Qué papel cumple el ARN guía?",options:["Corta el ADN en dos hebras","Conduce a la proteína Cas9 hasta la secuencia que coincide","Repara el corte tras la edición","Protege el genoma bacteriano del calor"],answer:1,type:"Detalle",why:"La guía lleva a Cas9 hasta la secuencia complementaria; el corte lo hace la proteína."},
-{q:"¿Qué hizo posible convertir CRISPR en herramienta de edición?",options:["Descubrir que la guía puede diseñarse a voluntad","Sintetizar Cas9 artificialmente","Aislar virus más agresivos","Usar bacterias en lugar de células humanas"],answer:0,type:"Inferencia",why:"Al reescribir el ARN guía, Cas9 corta donde uno decida, en cualquier genoma."},
-{q:"¿Para qué sirve la vía de reparación rápida y descuidada?",options:["Para reescribir una secuencia con precisión","Para apagar un gen introduciendo errores","Para duplicar el cromosoma","Para eliminar el ARN guía"],answer:1,type:"Aplicación",why:"Une los extremos con errores que inutilizan el gen."},
-{q:"¿Qué es la edición fuera de blanco?",options:["Editar embriones humanos","Cortes en sitios parecidos al buscado, con efectos imprevistos","Usar CRISPR en especies no humanas","Aplicar la técnica sin permiso ético"],answer:1,type:"Vocabulario",why:"Es el frente técnico: cortes en secuencias similares a la deseada."}]},
+{q:"¿Qué criterio establecía la cláusula para heredar la casa?",options:["El parentesco más cercano","La frecuencia de las visitas durante los últimos tres años","La necesidad económica","Un sorteo entre los sobrinos"],answer:1,type:"Detalle",why:"Heredaba quien la hubiera visitado con mayor frecuencia en ese periodo."},
+{q:"¿Dónde estaba el cuaderno de registro?",options:["En la casa de la avenida sur","Sellado en la notaría","Con uno de los sobrinos","Se había perdido"],answer:1,type:"Dato",why:"Se hallaba depositado y sellado en la misma notaría."},
+{q:"¿Cuál fue el argumento de la impugnación?",options:["Que la testadora no estaba lúcida","Que un cuaderno unilateral sin firma no era prueba suficiente","Que la casa ya estaba vendida","Que faltaba un sobrino"],answer:1,type:"Causa",why:"Alegaron que carecía de firma y verificación de terceros."},
+{q:"¿Por qué el juez validó el cuaderno?",options:["Porque tenía valor probatorio pleno","Porque la testadora fijó el criterio y nadie objetó mientras vivía","Porque el notario lo certificó","Porque los sobrinos llegaron a un acuerdo"],answer:1,type:"Inferencia",why:"Pesó que el instrumento fue establecido expresamente y aceptado en vida por silencio."}]},
 
-{id:"cielo",titulo:"Por qué el cielo es azul y el atardecer rojo",cat:["Ciencia"],nivel:"Medio",
-texto:`La luz del Sol parece blanca porque mezcla todas las longitudes de onda visibles. Al entrar en la atmósfera choca con moléculas de nitrógeno y oxígeno mucho más pequeñas que su longitud de onda, y ese encuentro produce dispersión de Rayleigh: la luz se desvía en todas direcciones en lugar de seguir de largo.
+{id:"archivo",titulo:"Memorándum sobre el archivo",cat:["Descripción"],nivel:"N5",
+texto:`En atención a las observaciones formuladas durante la última revisión interna, se comunica al personal adscrito que la reorganización del archivo documental, cuya primera etapa concluyó el mes pasado con resultados que la coordinación considera satisfactorios aunque perfectibles, entrará a partir del próximo periodo en una segunda fase orientada a la depuración de expedientes duplicados y a la homologación de los criterios de clasificación empleados por las distintas áreas.
 
-La clave es que la dispersión no trata a todos los colores por igual. Su intensidad es inversamente proporcional a la cuarta potencia de la longitud de onda, lo que significa que las ondas cortas se dispersan muchísimo más que las largas. El azul, de onda corta, se desvía alrededor de diez veces más que el rojo. Por eso, mirando en cualquier dirección del cielo, lo que llega a nuestros ojos es luz azul rebotada desde toda la bóveda.
+Se recuerda que la diversidad de criterios actualmente vigente, resultado acumulado de sucesivas modificaciones administrativas que se aplicaron sin derogar formalmente las disposiciones anteriores, ha provocado que un mismo expediente pueda localizarse bajo tres denominaciones distintas según el área que lo haya generado, circunstancia que explica buena parte de las demoras reportadas en la atención de solicitudes de consulta.
 
-Una pregunta natural es por qué el cielo no se ve violeta, ya que el violeta tiene onda aún más corta y se dispersa todavía más. Hay dos razones. El Sol emite menos violeta que azul, y sobre todo el ojo humano es mucho menos sensible a esa franja: nuestros conos responden con fuerza al azul y débilmente al violeta.
+Durante la segunda fase, y con el propósito de evitar interrupciones en la operación cotidiana, el acceso al acervo permanecerá restringido a las solicitudes que se presenten mediante el formulario correspondiente y con una antelación mínima de cuarenta y ocho horas, salvo en los casos que la coordinación califique expresamente como urgentes.
 
-El atardecer invierte la escena por pura geometría. Con el Sol bajo, su luz atraviesa un espesor de atmósfera mucho mayor antes de llegar a nosotros. En ese trayecto largo el azul se dispersa tanto que se pierde por el camino, y lo que sobrevive en línea recta son las ondas largas: naranjas y rojos. Las partículas de polvo y humo no crean el color, pero al añadir dispersión intensifican el efecto, razón por la que los atardeceres más encendidos aparecen tras un incendio o una erupción.
-
-La prueba definitiva está en la Luna. Sin atmósfera no hay dispersión, y el cielo lunar es negro incluso con el Sol brillando en lo alto.`,
+Se solicita a los responsables de cada área designar, en un plazo no mayor a diez días hábiles, a una persona que funja como enlace para la validación de los criterios propuestos, en el entendido de que la ausencia de designación se interpretará como conformidad con los criterios que determine la coordinación, sin que ello dé lugar a reclamación posterior.`,
 quiz:[
-{q:"¿Qué es la dispersión de Rayleigh?",options:["La absorción de luz por el vapor de agua","El desvío de la luz al chocar con moléculas más pequeñas que su longitud de onda","La reflexión de la luz en las nubes","La refracción en gotas de lluvia"],answer:1,type:"Vocabulario",why:"Ocurre al chocar con moléculas mucho menores que la longitud de onda de la luz."},
-{q:"¿Por qué el azul domina el cielo diurno?",options:["Porque el Sol emite sobre todo azul","Porque las ondas cortas se dispersan mucho más que las largas","Porque el oxígeno es de color azul","Porque el agua del mar refleja hacia arriba"],answer:1,type:"Causa",why:"La intensidad es inversamente proporcional a la cuarta potencia de la longitud de onda."},
-{q:"¿Por qué el cielo no se ve violeta?",options:["El violeta no se dispersa","El Sol emite menos violeta y el ojo es poco sensible a esa franja","El violeta se absorbe en la capa de ozono por completo","El violeta tiene onda más larga que el azul"],answer:1,type:"Detalle",why:"Menos emisión solar en el violeta y baja sensibilidad de nuestros conos."},
-{q:"¿Qué explica el color rojo del atardecer?",options:["El Sol se enfría al ponerse","La luz atraviesa más atmósfera y el azul se pierde en el camino","El polvo tiñe la luz de rojo","La atmósfera se calienta y emite rojo"],answer:1,type:"Inferencia",why:"Con trayecto más largo el azul se dispersa fuera y sobreviven las ondas largas."},
-{q:"¿Qué demuestra el cielo negro de la Luna?",options:["Que allí el Sol brilla menos","Que sin atmósfera no hay dispersión","Que el suelo lunar absorbe la luz","Que la distancia al Sol es mayor"],answer:1,type:"Aplicación",why:"Sin moléculas que dispersen la luz, el cielo permanece negro."}]},
-{id:"abejas",titulo:"Las abejas del techo",cat:["Narrativo"],nivel:"N1",
-texto:`En el techo de un edificio hay cuatro cajas de madera. Dentro viven miles de abejas. Julio sube cada semana a verlas. Lleva un traje blanco y un sombrero con red.
+{q:"¿A qué se orienta la segunda fase?",options:["A digitalizar el acervo","A depurar duplicados y homologar criterios de clasificación","A trasladar el archivo","A capacitar al personal"],answer:1,type:"Idea principal",why:"Depuración de expedientes duplicados y homologación de criterios."},
+{q:"¿Por qué existen criterios distintos?",options:["Por falta de personal","Porque hubo modificaciones sucesivas sin derogar las anteriores","Porque cada área lo decidió por votación","Por un error de sistema"],answer:1,type:"Causa",why:"Las modificaciones se aplicaron sin derogar formalmente lo anterior."},
+{q:"¿Con cuánta antelación deben presentarse las solicitudes?",options:["Veinticuatro horas","Cuarenta y ocho horas","Diez días","No se especifica"],answer:1,type:"Dato",why:"Antelación mínima de cuarenta y ocho horas, salvo urgencias."},
+{q:"¿Qué ocurre si un área no designa enlace?",options:["Se le suspende el acceso","Se interpreta como conformidad con los criterios de la coordinación","Se le impone una sanción","Se pospone la fase"],answer:1,type:"Detalle",why:"La ausencia de designación se toma como conformidad, sin reclamación posterior."}]},
 
-Julio abre una caja con cuidado. Saca un marco lleno de cera. Las abejas caminan sobre la cera. Algunas vuelan cerca de su cara. Julio no se asusta. Sabe que no atacan si uno se mueve despacio.
+{id:"espejos",titulo:"La costumbre de los espejos",cat:["Relato"],nivel:"N5",
+texto:`Existía en aquella casa una costumbre que los visitantes tardaban en advertir y que, una vez advertida, resultaba imposible de ignorar: todos los espejos, sin excepción alguna, estaban colgados a una altura considerablemente menor que la habitual, de manera que un adulto de estatura media debía inclinarse ligeramente para encontrar su propio reflejo.
 
-Las abejas salen del techo cada mañana. Vuelan hasta los parques del barrio. Buscan flores. De las flores toman néctar y polen. Luego vuelven a la caja. Una abeja puede volar tres kilómetros para buscar comida.
+La explicación, que la dueña ofrecía siempre con la misma naturalidad y en la misma cantidad de palabras, remitía a su abuela, mujer de escasa estatura que había pasado la mayor parte de su vida entrando en habitaciones donde los espejos le devolvían, en el mejor de los casos, la mitad superior de la frente.
 
-En la caja, el néctar se convierte en miel. Las abejas lo guardan en celdas de cera. Cada celda tiene seis lados. Todas son del mismo tamaño. Nadie les enseñó a hacerlo así.
+Al morir aquella mujer, y ante la posibilidad de restituir los espejos a su posición convencional, la nieta decidió mantenerlos exactamente donde estaban, no por sentimentalismo, según aclaraba de inmediato a quien preguntara, sino porque le parecía razonable conservar una disposición que obligaba a cualquier visitante a realizar, aunque fuera durante un instante y de manera involuntaria, el mismo gesto de acomodo que su abuela había repetido a lo largo de setenta años.
 
-En otoño, Julio saca parte de la miel. Deja el resto para el invierno. Las abejas comen esa miel cuando hace frío. Si él se lleva todo, ellas mueren.
-
-Muchas ciudades tienen colmenas en los techos. Las abejas de ciudad viven bien. Hay flores en los parques todo el año. Y casi no hay pesticidas.
-
-Julio dice que su trabajo es fácil. Solo tiene que mirar y no molestar.`,
+Con el tiempo la costumbre produjo un efecto que nadie había planeado: quienes entraban por primera vez se agachaban, se sorprendían, preguntaban, y esa pregunta abría invariablemente una conversación sobre asuntos que en otras casas rara vez se mencionan, de modo que un objeto colgado veinte centímetros más abajo de lo previsto terminó funcionando durante años como el más eficaz de los recursos para que las visitas dejaran de hablar del clima.`,
 quiz:[
-{q:"¿Dónde están las cajas de abejas?",options:["En el techo de un edificio","En un parque","En el campo","En un jardín"],answer:0,type:"Detalle",why:"El texto empieza diciendo que hay cuatro cajas en el techo de un edificio."},
-{q:"¿Cuántos kilómetros puede volar una abeja para buscar comida?",options:["Uno","Tres","Diez","Veinte"],answer:1,type:"Dato",why:"Una abeja puede volar tres kilómetros."},
-{q:"¿Por qué Julio deja parte de la miel en la caja?",options:["Para venderla después","Para que las abejas coman en invierno","Porque no cabe en su frasco","Para que la miel madure"],answer:1,type:"Causa",why:"Las abejas comen esa miel cuando hace frío."},
-{q:"¿Por qué las abejas viven bien en la ciudad?",options:["Hay flores todo el año y casi no hay pesticidas","Hace más calor","Hay menos gente","Los edificios las protegen del viento"],answer:0,type:"Idea principal",why:"El texto menciona flores en los parques todo el año y casi ningún pesticida."}]},
-
-{id:"bici",titulo:"El taller de la esquina",cat:["Narrativo"],nivel:"N1",
-texto:`Marta arregla bicicletas. Su taller está en la esquina de una calle tranquila. Abre a las nueve y cierra a las siete.
-
-El trabajo más común es la llanta ponchada. Marta saca la cámara, la mete en agua y busca burbujas. Donde salen burbujas está el agujero. Lo limpia, le pone pegamento y un parche. Espera cinco minutos. Después infla la llanta otra vez.
-
-También ajusta frenos y cadenas. Dice que casi nadie limpia su cadena. Una cadena sucia gasta más fuerza. Con un trapo y aceite, la bicicleta corre mejor.
-
-Marta aprendió sola. Tenía catorce años y una bicicleta vieja. La desarmó pieza por pieza en el patio de su casa. Tardó dos semanas en armarla otra vez. Le sobraron tres tornillos. La bicicleta funcionó igual.
-
-Ahora enseña los sábados. Van niños y también adultos. Cada uno lleva su bicicleta. Marta no arregla nada ese día. Solo mira y da instrucciones.
-
-Un cliente le preguntó por qué regala su conocimiento. Marta contestó que no lo regala. Dice que un cliente que entiende su bicicleta vuelve por cosas más difíciles.
-
-En la pared del taller hay una frase pintada: si rueda, se puede arreglar.`,
-quiz:[
-{q:"¿Cómo encuentra Marta el agujero de una cámara?",options:["Con una lupa","Metiéndola en agua y buscando burbujas","Tocándola con la mano","Inflándola mucho"],answer:1,type:"Detalle",why:"Donde salen burbujas está el agujero."},
-{q:"¿Qué pasó cuando armó su primera bicicleta?",options:["No funcionó","Le sobraron tres tornillos y funcionó igual","Perdió una pieza","Tardó dos días"],answer:1,type:"Dato",why:"Le sobraron tres tornillos y la bicicleta funcionó."},
-{q:"¿Qué hace Marta los sábados?",options:["Cierra el taller","Arregla bicicletas gratis","Mira y da instrucciones mientras otros arreglan","Vende bicicletas usadas"],answer:2,type:"Detalle",why:"Ese día no arregla nada: solo mira y da instrucciones."},
-{q:"¿Por qué enseña a sus clientes?",options:["Porque le sobra tiempo","Porque un cliente que entiende vuelve por trabajos más difíciles","Porque se lo pide el barrio","Porque quiere cerrar el taller"],answer:1,type:"Inferencia",why:"Ella misma explica que no regala nada: gana clientes que vuelven."}]},
-
-{id:"lluvia",titulo:"Guardar el agua de lluvia",cat:["Práctico"],nivel:"N1",
-texto:`Cuando llueve, el agua cae en el techo. Casi siempre se va por el drenaje. Pero se puede guardar.
-
-El sistema es simple. Necesitas un canal en el borde del techo. El canal lleva el agua a un tubo. El tubo la lleva a un tanque.
-
-Antes del tanque hay que poner un filtro. El filtro detiene las hojas y el polvo. Sin filtro, el agua se pudre en pocos días.
-
-Los primeros minutos de lluvia lavan el techo. Esa agua sale sucia. Por eso muchos sistemas tienen una trampa. La trampa guarda los primeros litros y los tira. Después el agua limpia pasa al tanque.
-
-Un techo de cien metros cuadrados junta mucha agua. Con un centímetro de lluvia se llenan casi mil litros. En una ciudad con lluvias fuertes, un tanque se llena en una tarde.
-
-Esa agua no se puede beber sin tratarla. Pero sirve para muchas cosas. Sirve para el baño, para lavar el piso y para regar plantas. En una casa normal, eso es la mitad del consumo.
-
-El tanque debe estar tapado. Si le entra luz, crecen algas. Si le entran mosquitos, ponen huevos.
-
-Con poco dinero, una casa puede usar menos agua de la red.`,
-quiz:[
-{q:"¿Para qué sirve el filtro?",options:["Para limpiar el tanque","Para detener hojas y polvo","Para bajar la temperatura","Para medir la lluvia"],answer:1,type:"Detalle",why:"El filtro detiene hojas y polvo; sin él, el agua se pudre."},
-{q:"¿Cuánta agua junta un techo de cien metros con un centímetro de lluvia?",options:["Cien litros","Casi mil litros","Diez mil litros","Cincuenta litros"],answer:1,type:"Dato",why:"El texto dice que se llenan casi mil litros."},
-{q:"¿Por qué se tiran los primeros litros?",options:["Porque están fríos","Porque lavaron el techo y salen sucios","Porque el tanque está lleno","Porque tienen cloro"],answer:1,type:"Causa",why:"Los primeros minutos de lluvia lavan el techo y esa agua sale sucia."},
-{q:"¿Para qué se puede usar esa agua?",options:["Para beber directamente","Para el baño, lavar y regar","Solo para el jardín","Para cocinar"],answer:1,type:"Aplicación",why:"No se puede beber sin tratarla, pero sirve para baño, limpieza y riego."}]},
-
-{id:"teseo",titulo:"La nave de Teseo",cat:["Expositivo"],nivel:"N5",
-texto:`La paradoja que los griegos atribuyeron a la nave de Teseo plantea, bajo la apariencia de una anécdota naval, uno de los problemas metafísicos más persistentes de la tradición occidental: la cuestión de qué es exactamente aquello que permanece idéntico a sí mismo cuando la totalidad de sus componentes materiales ha sido progresivamente sustituida.
-
-Los atenienses, según la narración, conservaban la embarcación en la que el héroe había regresado de Creta, y reemplazaban cada tabla podrida por una tabla nueva conforme el deterioro lo exigía, de manera que, transcurrido un número suficiente de generaciones, ninguna de las piezas originales permanecía en la estructura, aunque la nave continuara siendo exhibida, celebrada y designada con el mismo nombre.
-
-La dificultad se agudiza cuando se introduce la variante que Thomas Hobbes formuló en el siglo diecisiete: si alguien hubiera recogido pacientemente cada tabla descartada y con ellas hubiera reconstruido una segunda embarcación, tendríamos ante nosotros dos objetos que reclaman con igual legitimidad el título de nave original, uno por continuidad de forma y función, otro por continuidad de materia.
-
-Las respuestas contemporáneas suelen abandonar la búsqueda de un criterio único y admitir que la identidad de los objetos compuestos no reside en una sustancia subyacente, sino en la conveniencia de nuestros esquemas de individuación, que varían según el propósito de la descripción: el aduanero, el historiador y el carpintero no necesitan la misma respuesta.
-
-Aplicada a las personas, la paradoja resulta menos inocente, puesto que las células que constituyen un organismo humano se renuevan de manera casi completa a lo largo de los años, sin que ello nos lleve a suponer que quien recuerda su infancia sea alguien distinto del niño que la vivió.`,
-quiz:[
-{q:"¿Cuál es el problema que plantea la paradoja?",options:["Cómo se construían las naves griegas","Qué permanece idéntico cuando todos los componentes son sustituidos","Si Teseo existió realmente","Cómo conservar la madera del deterioro"],answer:1,type:"Idea principal",why:"El texto lo formula como la cuestión de qué permanece idéntico tras sustituir toda la materia."},
-{q:"¿Qué variante añadió Hobbes?",options:["Que la nave se hundió","Reconstruir una segunda nave con las tablas descartadas","Que las tablas eran de otro material","Que los atenienses mintieron"],answer:1,type:"Detalle",why:"Con las tablas retiradas se arma una segunda embarcación que también reclama ser la original."},
-{q:"¿Qué postura describe el texto como respuesta contemporánea?",options:["Que existe una sustancia subyacente que garantiza la identidad","Que la identidad depende de nuestros esquemas de individuación y del propósito","Que ambas naves son falsas","Que la pregunta carece de sentido lógico"],answer:1,type:"Inferencia",why:"Se abandona el criterio único: la respuesta depende del propósito de la descripción."},
-{q:"¿Por qué la paradoja resulta menos inocente aplicada a las personas?",options:["Porque las personas cambian de nombre","Porque las células se renuevan y aun así nos consideramos los mismos","Porque la memoria es infalible","Porque nadie recuerda su infancia"],answer:1,type:"Aplicación",why:"La renovación celular plantea el mismo problema sin que dejemos de identificarnos con el niño que fuimos."}]},
-
-{id:"emergencia",titulo:"Sistemas complejos y emergencia",cat:["Expositivo"],nivel:"N5",
-texto:`Se denomina emergencia al fenómeno mediante el cual un conjunto de elementos que interactúan localmente, y que carecen individualmente de cualquier representación del resultado global, produce sin embargo una organización coherente que no puede deducirse de la descripción aislada de sus partes ni atribuirse a una instancia central de coordinación.
-
-El ejemplo canónico lo ofrecen las colonias de termitas, cuyos individuos, dotados de un repertorio conductual extremadamente limitado y sin acceso a plano alguno, levantan estructuras ventiladas de varios metros cuya regulación térmica interna resulta comparable a la de un edificio proyectado por ingenieros; el mecanismo que lo explica, denominado estigmergia, consiste en que cada termita responde a las modificaciones que otras han dejado en el ambiente, de modo que la propia obra en curso funciona como memoria compartida y como instrucción implícita.
-
-Fenómenos análogos se documentan en dominios sin relación aparente entre sí: la formación de embotellamientos que se desplazan hacia atrás mientras los vehículos avanzan, la fijación de precios en mercados descentralizados, la sincronización espontánea de luciérnagas y la aparición de significado en redes neuronales cuyas unidades individuales solo computan sumas ponderadas.
-
-Lo que estos casos comparten no es su sustrato material, sino una arquitectura formal: multiplicidad de agentes, reglas locales sencillas, retroalimentación y ausencia de control jerárquico. De ahí la afirmación, frecuentemente malinterpretada como misticismo, de que el todo exhibe propiedades que las partes no poseen; la afirmación no postula ninguna fuerza adicional, sino que señala los límites explicativos del análisis puramente descendente cuando se aplica a sistemas cuya conducta depende críticamente de las interacciones y no de los componentes.`,
-quiz:[
-{q:"¿Qué es la emergencia según el texto?",options:["Una fuerza adicional que actúa sobre los sistemas","Una organización coherente que surge de interacciones locales sin coordinación central","La suma de las propiedades de las partes","Un fallo en la descripción científica"],answer:1,type:"Vocabulario",why:"Surge de elementos que interactúan localmente, sin instancia central ni deducción desde las partes aisladas."},
-{q:"¿En qué consiste la estigmergia?",options:["En que cada termita responde a las modificaciones que otras dejaron en el ambiente","En la comunicación química directa entre individuos","En seguir a una termita líder","En repetir un plano heredado genéticamente"],answer:0,type:"Detalle",why:"La obra en curso funciona como memoria compartida e instrucción implícita."},
-{q:"¿Qué comparten los casos citados?",options:["El mismo sustrato material","Una arquitectura formal: agentes múltiples, reglas locales, retroalimentación y sin jerarquía","Su origen biológico","Su escala física"],answer:1,type:"Inferencia",why:"El texto subraya que lo común es la arquitectura formal, no el material."},
-{q:"¿Qué quiere decir que el todo exhibe propiedades que las partes no poseen?",options:["Que existe una fuerza vital adicional","Que el análisis descendente tiene límites en sistemas dominados por interacciones","Que las partes son irrelevantes","Que la ciencia no puede estudiarlos"],answer:1,type:"Idea principal",why:"No postula ninguna fuerza extra: señala los límites del análisis puramente descendente."}]}
+{q:"¿Qué tenían de particular los espejos de la casa?",options:["Estaban rotos","Colgaban más bajo de lo habitual","Estaban cubiertos","Eran todos redondos"],answer:1,type:"Detalle",why:"Colgaban a una altura menor, obligando a inclinarse."},
+{q:"¿De dónde venía esa disposición?",options:["De un arquitecto","De la abuela, mujer de escasa estatura","De una moda antigua","De un accidente"],answer:1,type:"Causa",why:"La abuela era de baja estatura y los espejos se pusieron a su altura."},
+{q:"¿Por qué la nieta los dejó así?",options:["Por sentimentalismo","Porque obligaba a los visitantes a repetir el gesto de su abuela","Por no gastar en la mudanza","Porque no alcanzaba a moverlos"],answer:1,type:"Inferencia",why:"Ella misma descarta el sentimentalismo y explica ese motivo."},
+{q:"¿Qué efecto imprevisto produjo la costumbre?",options:["Que las visitas dejaran de venir","Que las conversaciones dejaran de ser triviales","Que se rompieran varios espejos","Que otros vecinos la imitaran"],answer:1,type:"Idea principal",why:"La sorpresa abría conversaciones que en otras casas no ocurren."}]}
 ];
+
 const GUIA=[
 {id:"g1",titulo:"Qué hace tu ojo cuando lees",kick:"Capítulo 1 · Mecánica",diag:"sacadas",
 p:[
@@ -1685,11 +1669,11 @@ function calcularNivelSugerido(hist){
 }
 function armarFeed(){
   const obj=S.nivel||NIVSUG;
+  const base=TEXTOS.filter(t=>t.cat[0]!=="Lectura rápida");
   const peso=t=>{const p=PROG[t.id];
     return Math.abs((t.lvl||3)-obj)*10+(p&&p.done?4:0)+(p&&p.idx>0?-1:0)+Math.random()*3};
-  FEED=TEXTOS.slice().sort((a,b)=>peso(a)-peso(b));
+  FEED=base.slice().sort((a,b)=>peso(a)-peso(b));
 }
-const GLYPH={"Lectura rápida":"⚡","Narrativo":"✦","Divulgación":"◎","Expositivo":"▤","Práctico":"◆","Ciencia":"⬡"};
 let fIdx=0,fDrag=0;
 function altoFeed(){return $("#feed").clientHeight||1}
 const CH=.68,PASO=.72;
@@ -1786,7 +1770,7 @@ let arrastro=false;
   ["pointerup","pointercancel","pointerleave"].forEach(ev=>el.addEventListener(ev,()=>{down=false;
     setTimeout(()=>arrastro=false,60)}));
 })();
-const CATS=["Todos","Lectura rápida","Narrativo","Divulgación","Expositivo","Práctico","Ciencia"];
+const CATS=["Todos","Relato","Escena","Diario","Carta","Descripción"];
 function pintarFiltros(){
   $("#filtros").innerHTML=CATS.map(c=>'<button data-c="'+c+'" aria-pressed="'+(S.filtro===c)+'">'+c+'</button>').join("");
   $$("#filtros button").forEach(b=>b.onclick=()=>{S.filtro=b.dataset.c;S.limite=6;pintarFiltros();pintarBiblioteca()});
